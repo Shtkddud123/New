@@ -30,6 +30,8 @@ vector
 map
 -
 
+../include/vector.hpp
+
 /home/noh/Desktop/Program/GIT/New/C++_Stuff/src/Alg1.cxx
 iostream
 -
@@ -47,4 +49,18 @@ Geo.hpp
 /home/noh/Desktop/Program/GIT/New/C++_Stuff/src/Geo.hpp
 StringVector.hpp
 /home/noh/Desktop/Program/GIT/New/C++_Stuff/src/StringVector.hpp
+
+/home/noh/Desktop/Program/GIT/New/C++_Stuff/src/vector.cxx
+stdio.h
+-
+gsl/gsl_vector.h
+-
+gsl/gsl_cblas.h
+-
+vector
+-
+iterator
+-
+vector.hpp
+/home/noh/Desktop/Program/GIT/New/C++_Stuff/src/vector.hpp
 

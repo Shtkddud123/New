@@ -7,3 +7,6 @@ src/CMakeFiles/src.dir/Alg1.o: ../include/Object.hpp
 src/CMakeFiles/src.dir/Alg1.o: ../include/StringVector.hpp
 src/CMakeFiles/src.dir/Alg1.o: ../src/Alg1.cxx
 
+src/CMakeFiles/src.dir/vector.o: ../include/vector.hpp
+src/CMakeFiles/src.dir/vector.o: ../src/vector.cxx
+

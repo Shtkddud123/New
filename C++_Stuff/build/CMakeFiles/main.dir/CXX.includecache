@@ -6,25 +6,25 @@
 
 #IncludeRegexTransform: 
 
-/home/noh/Desktop/Program/GIT/New/C++_Stuff/Geo.hpp
+../include/Geo.hpp
 vector
 -
 map
 -
 
-/home/noh/Desktop/Program/GIT/New/C++_Stuff/Map.hpp
+../include/Map.hpp
 vector
 -
 map
 -
 
-/home/noh/Desktop/Program/GIT/New/C++_Stuff/Object.hpp
+../include/Object.hpp
 vector
 -
 map
 -
 
-/home/noh/Desktop/Program/GIT/New/C++_Stuff/StringVector.hpp
+../include/StringVector.hpp
 vector
 -
 map

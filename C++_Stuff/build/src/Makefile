@@ -140,6 +140,21 @@ Alg1.s:
 	cd /home/noh/Desktop/Program/GIT/New/C++_Stuff/build && $(MAKE) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/Alg1.s
 .PHONY : Alg1.s
 
+# target to build an object file
+vector.o:
+	cd /home/noh/Desktop/Program/GIT/New/C++_Stuff/build && $(MAKE) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/vector.o
+.PHONY : vector.o
+
+# target to preprocess a source file
+vector.i:
+	cd /home/noh/Desktop/Program/GIT/New/C++_Stuff/build && $(MAKE) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/vector.i
+.PHONY : vector.i
+
+# target to generate assembly for a file
+vector.s:
+	cd /home/noh/Desktop/Program/GIT/New/C++_Stuff/build && $(MAKE) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/vector.s
+.PHONY : vector.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -152,6 +167,9 @@ help:
 	@echo "... Alg1.o"
 	@echo "... Alg1.i"
 	@echo "... Alg1.s"
+	@echo "... vector.o"
+	@echo "... vector.i"
+	@echo "... vector.s"
 .PHONY : help
 
 

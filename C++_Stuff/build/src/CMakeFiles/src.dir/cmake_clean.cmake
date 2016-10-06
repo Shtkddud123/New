@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/src.dir/Alg1.o"
+  "CMakeFiles/src.dir/vector.o"
   "libsrc.pdb"
   "libsrc.a"
 )
