@@ -1,6 +1,0 @@
-/home/noh/Desktop/Program/GIT/New/C++_Stuff/build/CMakeFiles/rebuild_cache.dir
-/home/noh/Desktop/Program/GIT/New/C++_Stuff/build/CMakeFiles/edit_cache.dir
-/home/noh/Desktop/Program/GIT/New/C++_Stuff/build/CMakeFiles/main.dir
-/home/noh/Desktop/Program/GIT/New/C++_Stuff/build/include/CMakeFiles/edit_cache.dir
-/home/noh/Desktop/Program/GIT/New/C++_Stuff/build/include/CMakeFiles/rebuild_cache.dir
-/home/noh/Desktop/Program/GIT/New/C++_Stuff/build/include/CMakeFiles/include.dir
