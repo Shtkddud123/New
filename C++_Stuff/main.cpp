@@ -1,18 +1,24 @@
+#include "alg1.hpp"
+#include "stringvector.hpp"
+#include "maps.hpp"
+#include "geo.hpp"
 #include <iostream>
-#include "Sally.h"
 #include <vector>
 #include <algorithm>
 #include <map>
+
+using namespace geo;
+//using namespace geo;
 
 int main(int argc, char *argv[]){
   /*
     Operator overloading 
   */
 
-  Sally a(30);
-  Sally b(40);
+  Alg1 a(30);
+  Alg1 b(40);
 
-  Sally c;
+  Alg1 c;
   c = a +b;
   std::cout << c.num << std::endl;
 
@@ -30,7 +36,7 @@ int main(int argc, char *argv[]){
   std::cout << "dfdf" << endl;
   StringVector<int> bb;
   
-  bb.addnew(aRandomVector); // adding new vector
+  bb.addNew(aRandomVector); // adding new vector
 
   bb.print();
 
