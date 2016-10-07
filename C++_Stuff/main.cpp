@@ -3,10 +3,14 @@
 #include <algorithm>
 #include <map>
 
+// --- Custom C++ header files --- //
+
 #include "Object.hpp"
 #include "Map.hpp"
 #include "Geo.hpp"
 #include "StringVector.hpp"
+#include "CustomSet.hpp"
+
 
 int main(int argc, char *argv[]){
   /*
@@ -58,5 +62,9 @@ int main(int argc, char *argv[]){
   mymap.addtomap('d',3);
   mymap.addtomap('e',3);
   mymap.printmap();
+
+  /* Testing the   */
+
+
   return 0;
 }

@@ -1,0 +1,10 @@
+#pragma once
+#include <iostream>
+#include <set>
+
+namespace customSet {
+
+  template <class X> 
+  using SET = std::set<X>; // typeset a set type 
+   
+}

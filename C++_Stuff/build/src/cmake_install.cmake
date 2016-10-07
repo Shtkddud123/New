@@ -1,4 +1,4 @@
-# Install script for directory: /home/noh/Desktop/Program/GIT/New/C++_Stuff/src
+# Install script for directory: /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

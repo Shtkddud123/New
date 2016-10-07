@@ -32,7 +32,7 @@ map
 
 ../include/vector.hpp
 
-/home/noh/Desktop/Program/GIT/New/C++_Stuff/src/Alg1.cxx
+/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/Alg1.cxx
 iostream
 -
 vector
@@ -42,15 +42,15 @@ algorithm
 map
 -
 Object.hpp
-/home/noh/Desktop/Program/GIT/New/C++_Stuff/src/Object.hpp
+/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/Object.hpp
 Map.hpp
-/home/noh/Desktop/Program/GIT/New/C++_Stuff/src/Map.hpp
+/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/Map.hpp
 Geo.hpp
-/home/noh/Desktop/Program/GIT/New/C++_Stuff/src/Geo.hpp
+/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/Geo.hpp
 StringVector.hpp
-/home/noh/Desktop/Program/GIT/New/C++_Stuff/src/StringVector.hpp
+/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/StringVector.hpp
 
-/home/noh/Desktop/Program/GIT/New/C++_Stuff/src/vector.cxx
+/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/vector.cxx
 stdio.h
 -
 gsl/gsl_vector.h
@@ -62,5 +62,5 @@ vector
 iterator
 -
 vector.hpp
-/home/noh/Desktop/Program/GIT/New/C++_Stuff/src/vector.hpp
+/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/vector.hpp
 

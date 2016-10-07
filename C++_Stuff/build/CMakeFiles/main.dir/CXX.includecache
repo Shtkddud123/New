@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+../include/CustomSet.hpp
+iostream
+-
+set
+-
+
 ../include/Geo.hpp
 vector
 -
@@ -30,7 +36,7 @@ vector
 map
 -
 
-/home/noh/Desktop/Program/GIT/New/C++_Stuff/main.cpp
+/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/main.cpp
 iostream
 -
 vector
@@ -40,11 +46,13 @@ algorithm
 map
 -
 Object.hpp
-/home/noh/Desktop/Program/GIT/New/C++_Stuff/Object.hpp
+/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/Object.hpp
 Map.hpp
-/home/noh/Desktop/Program/GIT/New/C++_Stuff/Map.hpp
+/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/Map.hpp
 Geo.hpp
-/home/noh/Desktop/Program/GIT/New/C++_Stuff/Geo.hpp
+/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/Geo.hpp
 StringVector.hpp
-/home/noh/Desktop/Program/GIT/New/C++_Stuff/StringVector.hpp
+/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/StringVector.hpp
+CustomSet.hpp
+/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/CustomSet.hpp
 

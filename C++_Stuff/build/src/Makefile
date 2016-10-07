@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/noh/Desktop/Program/GIT/New/C++_Stuff
+CMAKE_SOURCE_DIR = /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/noh/Desktop/Program/GIT/New/C++_Stuff/build
+CMAKE_BINARY_DIR = /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/noh/Desktop/Program/GIT/New/C++_Stuff/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/noh/Desktop/Program/GIT/New/C++_Stuff/build/CMakeFiles /home/noh/Desktop/Program/GIT/New/C++_Stuff/build/src/CMakeFiles/progress.marks
-	cd /home/noh/Desktop/Program/GIT/New/C++_Stuff/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/noh/Desktop/Program/GIT/New/C++_Stuff/build/CMakeFiles 0
+	cd /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build/CMakeFiles /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build/src/CMakeFiles/progress.marks
+	cd /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/noh/Desktop/Program/GIT/New/C++_Stuff/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
+	cd /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/noh/Desktop/Program/GIT/New/C++_Stuff/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/noh/Desktop/Program/GIT/New/C++_Stuff/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/noh/Desktop/Program/GIT/New/C++_Stuff/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/src.dir/rule:
-	cd /home/noh/Desktop/Program/GIT/New/C++_Stuff/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/src.dir/rule
+	cd /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/src.dir/rule
 .PHONY : src/CMakeFiles/src.dir/rule
 
 # Convenience name for target.
@@ -122,37 +122,37 @@ src: src/CMakeFiles/src.dir/rule
 
 # fast build rule for target.
 src/fast:
-	cd /home/noh/Desktop/Program/GIT/New/C++_Stuff/build && $(MAKE) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/build
+	cd /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build && $(MAKE) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/build
 .PHONY : src/fast
 
 # target to build an object file
 Alg1.o:
-	cd /home/noh/Desktop/Program/GIT/New/C++_Stuff/build && $(MAKE) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/Alg1.o
+	cd /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build && $(MAKE) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/Alg1.o
 .PHONY : Alg1.o
 
 # target to preprocess a source file
 Alg1.i:
-	cd /home/noh/Desktop/Program/GIT/New/C++_Stuff/build && $(MAKE) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/Alg1.i
+	cd /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build && $(MAKE) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/Alg1.i
 .PHONY : Alg1.i
 
 # target to generate assembly for a file
 Alg1.s:
-	cd /home/noh/Desktop/Program/GIT/New/C++_Stuff/build && $(MAKE) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/Alg1.s
+	cd /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build && $(MAKE) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/Alg1.s
 .PHONY : Alg1.s
 
 # target to build an object file
 vector.o:
-	cd /home/noh/Desktop/Program/GIT/New/C++_Stuff/build && $(MAKE) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/vector.o
+	cd /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build && $(MAKE) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/vector.o
 .PHONY : vector.o
 
 # target to preprocess a source file
 vector.i:
-	cd /home/noh/Desktop/Program/GIT/New/C++_Stuff/build && $(MAKE) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/vector.i
+	cd /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build && $(MAKE) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/vector.i
 .PHONY : vector.i
 
 # target to generate assembly for a file
 vector.s:
-	cd /home/noh/Desktop/Program/GIT/New/C++_Stuff/build && $(MAKE) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/vector.s
+	cd /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build && $(MAKE) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/vector.s
 .PHONY : vector.s
 
 # Help Target
@@ -181,6 +181,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/noh/Desktop/Program/GIT/New/C++_Stuff/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

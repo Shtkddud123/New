@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/noh/Desktop/Program/GIT/New/C++_Stuff
+CMAKE_SOURCE_DIR = /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/noh/Desktop/Program/GIT/New/C++_Stuff/build
+CMAKE_BINARY_DIR = /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/src.dir/depend.make
@@ -59,16 +59,16 @@ include src/CMakeFiles/src.dir/flags.make
 
 src/CMakeFiles/src.dir/Alg1.o: src/CMakeFiles/src.dir/flags.make
 src/CMakeFiles/src.dir/Alg1.o: ../src/Alg1.cxx
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/noh/Desktop/Program/GIT/New/C++_Stuff/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/src.dir/Alg1.o"
-	cd /home/noh/Desktop/Program/GIT/New/C++_Stuff/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/src.dir/Alg1.o -c /home/noh/Desktop/Program/GIT/New/C++_Stuff/src/Alg1.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/src.dir/Alg1.o"
+	cd /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/src.dir/Alg1.o -c /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/Alg1.cxx
 
 src/CMakeFiles/src.dir/Alg1.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/src.dir/Alg1.i"
-	cd /home/noh/Desktop/Program/GIT/New/C++_Stuff/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/noh/Desktop/Program/GIT/New/C++_Stuff/src/Alg1.cxx > CMakeFiles/src.dir/Alg1.i
+	cd /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/Alg1.cxx > CMakeFiles/src.dir/Alg1.i
 
 src/CMakeFiles/src.dir/Alg1.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/src.dir/Alg1.s"
-	cd /home/noh/Desktop/Program/GIT/New/C++_Stuff/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/noh/Desktop/Program/GIT/New/C++_Stuff/src/Alg1.cxx -o CMakeFiles/src.dir/Alg1.s
+	cd /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/Alg1.cxx -o CMakeFiles/src.dir/Alg1.s
 
 src/CMakeFiles/src.dir/Alg1.o.requires:
 
@@ -83,16 +83,16 @@ src/CMakeFiles/src.dir/Alg1.o.provides.build: src/CMakeFiles/src.dir/Alg1.o
 
 src/CMakeFiles/src.dir/vector.o: src/CMakeFiles/src.dir/flags.make
 src/CMakeFiles/src.dir/vector.o: ../src/vector.cxx
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/noh/Desktop/Program/GIT/New/C++_Stuff/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/src.dir/vector.o"
-	cd /home/noh/Desktop/Program/GIT/New/C++_Stuff/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/src.dir/vector.o -c /home/noh/Desktop/Program/GIT/New/C++_Stuff/src/vector.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/src.dir/vector.o"
+	cd /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/src.dir/vector.o -c /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/vector.cxx
 
 src/CMakeFiles/src.dir/vector.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/src.dir/vector.i"
-	cd /home/noh/Desktop/Program/GIT/New/C++_Stuff/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/noh/Desktop/Program/GIT/New/C++_Stuff/src/vector.cxx > CMakeFiles/src.dir/vector.i
+	cd /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/vector.cxx > CMakeFiles/src.dir/vector.i
 
 src/CMakeFiles/src.dir/vector.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/src.dir/vector.s"
-	cd /home/noh/Desktop/Program/GIT/New/C++_Stuff/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/noh/Desktop/Program/GIT/New/C++_Stuff/src/vector.cxx -o CMakeFiles/src.dir/vector.s
+	cd /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/vector.cxx -o CMakeFiles/src.dir/vector.s
 
 src/CMakeFiles/src.dir/vector.o.requires:
 
@@ -117,9 +117,9 @@ src/libsrc.a: src/CMakeFiles/src.dir/Alg1.o
 src/libsrc.a: src/CMakeFiles/src.dir/vector.o
 src/libsrc.a: src/CMakeFiles/src.dir/build.make
 src/libsrc.a: src/CMakeFiles/src.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/noh/Desktop/Program/GIT/New/C++_Stuff/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libsrc.a"
-	cd /home/noh/Desktop/Program/GIT/New/C++_Stuff/build/src && $(CMAKE_COMMAND) -P CMakeFiles/src.dir/cmake_clean_target.cmake
-	cd /home/noh/Desktop/Program/GIT/New/C++_Stuff/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/src.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libsrc.a"
+	cd /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build/src && $(CMAKE_COMMAND) -P CMakeFiles/src.dir/cmake_clean_target.cmake
+	cd /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/src.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/CMakeFiles/src.dir/build: src/libsrc.a
@@ -132,10 +132,10 @@ src/CMakeFiles/src.dir/requires: src/CMakeFiles/src.dir/vector.o.requires
 .PHONY : src/CMakeFiles/src.dir/requires
 
 src/CMakeFiles/src.dir/clean:
-	cd /home/noh/Desktop/Program/GIT/New/C++_Stuff/build/src && $(CMAKE_COMMAND) -P CMakeFiles/src.dir/cmake_clean.cmake
+	cd /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build/src && $(CMAKE_COMMAND) -P CMakeFiles/src.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/src.dir/clean
 
 src/CMakeFiles/src.dir/depend:
-	cd /home/noh/Desktop/Program/GIT/New/C++_Stuff/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/noh/Desktop/Program/GIT/New/C++_Stuff /home/noh/Desktop/Program/GIT/New/C++_Stuff/src /home/noh/Desktop/Program/GIT/New/C++_Stuff/build /home/noh/Desktop/Program/GIT/New/C++_Stuff/build/src /home/noh/Desktop/Program/GIT/New/C++_Stuff/build/src/CMakeFiles/src.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build/src /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build/src/CMakeFiles/src.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/src.dir/depend
 
