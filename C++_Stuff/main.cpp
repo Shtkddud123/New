@@ -2,8 +2,8 @@
 #include <vector>
 #include <algorithm>
 #include <map>
-#include <math.h>
-#include <stdio.h>
+#include <cmath>
+#include <cstdio>
 // --- Custom C++ header files --- //
 
 #include "Object.hpp"
@@ -12,6 +12,7 @@
 #include "StringVector.hpp"
 #include "CustomSet.hpp"
 #include "CustomBessel.hpp"
+#include "Rectangle.hpp"
 
 // --- GSL libraries --- //
 
@@ -92,6 +93,8 @@ int main(int argc, char *argv[]){
   // int num;
   //double sol[128];
   //  nums = gsl_poly_solve_quadratic(9.0, 6.0, 1.0, &sol[0], &sol[1]);
+
+  StankFist a;
   
   return 0;
     

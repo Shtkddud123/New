@@ -24,6 +24,12 @@ vector
 map
 -
 
+../include/Rectangle.hpp
+iostream
+-
+cassert
+-
+
 ../include/StringVector.hpp
 vector
 -
@@ -51,6 +57,14 @@ Geo.hpp
 /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/Geo.hpp
 StringVector.hpp
 /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/StringVector.hpp
+
+/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/friendFunction.cxx
+iostream
+-
+vector
+-
+Rectangle.hpp
+/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/Rectangle.hpp
 
 /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/quadratic.cxx
 quadratic.hpp

@@ -6,6 +6,7 @@ CMakeFiles/main.dir/main.o: ../include/CustomSet.hpp
 CMakeFiles/main.dir/main.o: ../include/Geo.hpp
 CMakeFiles/main.dir/main.o: ../include/Map.hpp
 CMakeFiles/main.dir/main.o: ../include/Object.hpp
+CMakeFiles/main.dir/main.o: ../include/Rectangle.hpp
 CMakeFiles/main.dir/main.o: ../include/StringVector.hpp
 CMakeFiles/main.dir/main.o: ../include/quadratic.hpp
 CMakeFiles/main.dir/main.o: ../main.cpp

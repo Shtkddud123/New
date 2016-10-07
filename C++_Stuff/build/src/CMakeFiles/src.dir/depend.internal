@@ -7,6 +7,9 @@ src/CMakeFiles/src.dir/Alg1.o
  ../include/Object.hpp
  ../include/StringVector.hpp
  /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/Alg1.cxx
+src/CMakeFiles/src.dir/friendFunction.o
+ ../include/Rectangle.hpp
+ /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/friendFunction.cxx
 src/CMakeFiles/src.dir/quadratic.o
  ../include/quadratic.hpp
  /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/quadratic.cxx

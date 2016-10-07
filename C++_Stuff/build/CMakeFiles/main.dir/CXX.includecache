@@ -36,6 +36,12 @@ vector
 map
 -
 
+../include/Rectangle.hpp
+iostream
+-
+cassert
+-
+
 ../include/StringVector.hpp
 vector
 -
@@ -53,9 +59,9 @@ algorithm
 -
 map
 -
-math.h
+cmath
 -
-stdio.h
+cstdio
 -
 Object.hpp
 /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/Object.hpp
@@ -69,6 +75,8 @@ CustomSet.hpp
 /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/CustomSet.hpp
 CustomBessel.hpp
 /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/CustomBessel.hpp
+Rectangle.hpp
+/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/Rectangle.hpp
 quadratic.hpp
 /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/quadratic.hpp
 gsl/gsl_math.h

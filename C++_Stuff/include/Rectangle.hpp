@@ -1,4 +1,4 @@
-#pragma once
+#pragma once 
 #include <iostream>
 #include <cassert>
 
@@ -29,15 +29,14 @@ class square : public Rectangle<T> {
   }
 };
 
-namespace CardGame_Scoped {
-  enum class Suit {Diamonds, Hearts, Clubs, Spades};
-  void PlayCard (Suit suit) {
-    switch(suit) {
-    case Suit::Diamonds : cout << "Diamonds \n"; break;
-    case Suit::Hearts : cout << "Hearts \n"; break;
-    case Suit::Clubs : cout << "Clubs \n"; break;
-    case Suit::Spades : cout << "Spades \n"; break;	  
-    }
+enum class Suit {Diamonds, Hearts, Clubs, Spades};
+void PlayCard (Suit suit) {
+  switch(suit) {
+  case Suit::Diamonds : cout << "Diamonds \n"; break;
+  case Suit::Hearts : cout << "Hearts \n"; break;
+  case Suit::Clubs : cout << "Clubs \n"; break;
+  case Suit::Spades : cout << "Spades \n"; break;	  
   }
 }
+
 
