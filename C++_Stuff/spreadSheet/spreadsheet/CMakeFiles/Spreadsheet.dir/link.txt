@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/Spreadsheet.dir/SpreadsheetCell.cpp.o  -o Spreadsheet -rdynamic 

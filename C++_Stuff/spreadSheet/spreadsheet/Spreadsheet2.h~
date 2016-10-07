@@ -1,0 +1,14 @@
+#ifndef __PEOPLE__
+#define __PEOPLE__
+
+class People {
+ public:
+  People();
+
+ protected:
+  
+ private:
+  
+};
+
+#endif 

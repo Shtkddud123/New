@@ -1,0 +1,230 @@
+// SpreadsheetCell.cpp
+#include <iostream>
+#include <sstream>
+#include <cstdlib>
+#include <stdexcept>
+#include "SpreadsheetCell.h" 
+#include "Spreadsheet1.h" 
+#include "Spreadsheet2.h"
+
+using namespace std; 
+
+bool fnComp (char lhs, char rhs) {    
+  // return true if lhs is indeed smaller than the rhs, and visa 
+  // versa   
+  return lhs < rhs;
+}
+// initializing the default constructor 
+SpreadsheetCell::SpreadsheetCell() {
+}
+SpreadsheetCell::~SpreadsheetCell() {
+}
+
+// initializing the double constructor 
+SpreadsheetCell::SpreadsheetCell(double initialValue) {
+  dd = initialValue;
+}
+
+// iniializing the string constructor
+SpreadsheetCell::SpreadsheetCell(string initialValue) {
+  ss = initialValue;
+}
+
+void SpreadsheetCell::setValue(double inValue) {
+  mValue = inValue;
+  // take input inValue and change it to a string
+  mString = doubleToString(mValue);
+}
+
+double SpreadsheetCell::getValue() 
+{
+  // protected - any member of the class can call a protected method 
+  // and accesss a protected member 
+  return (mValue);
+}
+
+void SpreadsheetCell::setString(string inString) {
+  mString = inString;
+  //  opposite of the setValue function 
+  mValue = stringToDouble(mString);
+}
+
+string SpreadsheetCell::getString() {
+  // mString has a protected status but can be returned 
+  // protected - Any method of the class can call a 
+  // protected method and access a protected member 
+  return (mString);
+}
+
+string SpreadsheetCell::doubleToString(double inValue) {
+
+  // What does ostringstream do?
+
+  // whatever is inputted into the ostringstream is converted to a string
+  ostringstream ostr;
+  ostr << inValue;
+  return (ostr.str());
+}
+
+double SpreadsheetCell::stringToDouble(string inString) {
+  double temp;
+  
+  istringstream istr(inString);
+  
+  istr >> temp; //input whatever value that has been converted to temp 
+
+  if (istr.fail() || istr.eof()) {
+    return 0; // failure conditions
+  }
+}
+
+ 
+/// --------------- vector/map example ---
+
+mapString::mapString() {
+  // default constructor 
+}
+mapString::~mapString(){
+  // default destructor 
+}
+
+void mapString::readin() {
+  // as s is private, can only be accessed by this function 
+ while (cin >> s)
+    ++counters[s];
+}
+
+void mapString::addtoMap() {
+  // read the input, keeping track of each word and how often we see it
+for (map<string, int>::const_iterator it = counters.begin();
+     it != counters.end(); ++it)
+  words_by_freq[it->second].push_back(it->first);
+}
+/*
+  for (map<int, vector<string> >::const_iterator i = words_by_freq.begin();
+       i != words_by_freq.end(); ++i) {
+    cout << "\nFrequency: " << i->first << endl;
+
+    for (vector<string>::const_iterator j = i->second.begin();
+	 j != i->second.end(); ++j)
+      cout << *j << endl;
+  }
+*/
+
+// Constructor and Destructor 
+printData::printData() {
+}
+printData::~printData() {
+}
+/// 
+
+Box::Box() {
+} // constructor 
+Box::~Box() {
+} // destructor 
+
+
+// --------- Stack class ---------------//
+
+
+template <class T>
+void Stack<T>::push (T const& elem) {
+  // append copy of passed elements
+  // elems is a vector 
+  elems.push_back(elem);
+}
+
+template <class T>
+void Stack<T>::pop ()
+{
+  if (elems.empty()) {
+    throw out_of_range("Stack<>::pop(): empty stack"); // if the vector is empty, we throw out a standard error
+  }
+
+  // remove last element 
+  elems.pop_back();
+}
+
+template <class T>
+T Stack<T>::top () const {
+
+  if(elems.empty()) {
+    throw out_of_range("Stack<>::top(): empty stack");    
+  }
+  // return a copy of the last element
+  return elems.back();
+}
+
+template <class T>
+void mew<T>::print(T const& hello) {
+  cout << hello << endl; 
+}
+
+// ------ Birthday composition ----
+
+Birthday::Birthday(int d, int m, int y) {
+  day = d;
+  month = m;
+  year = y;
+  // Now the privatised variables are initialized with
+  // the constructor 
+};
+
+void Birthday::printDate() {
+  cout << "%i /  %i / %i" << day << month << year;
+}
+
+int main (int argc, char *argv[]) {
+
+  SpreadsheetCell *a = new SpreadsheetCell(5);  
+  delete a; 
+  mapString b;
+  b.readin();
+
+  printData data;
+  data.print(5);
+  data.print(500.3);
+  data.print("Hello sang");
+
+
+  /* Box examples */
+
+  Box Box1;
+  Box Box2;
+  Box Box3;
+  
+  double volume = 0.0;
+
+
+  // Box 1 specification
+  Box1.setLength(6.0); 
+  Box1.setBreadth(7.0); 
+  Box1.setHeight(5.0);
+
+  // Box 2 specification
+  Box2.setLength(6.0); 
+  Box2.setBreadth(7.0); 
+  Box2.setHeight(5.0);
+  
+  Box3 = Box1 + Box2;
+
+
+  // example templating 
+  
+  PrintTwice(10.123);
+  cout << TWICE(30) << endl;
+  cout << Add(10,20) << endl; 
+  
+  /*
+
+   */
+    Stack<int> intStack; // stack of ints
+    Stack<string> stringStack;  // stack of strings     
+    // 
+    mew<string> bbb;
+    bbb.print("dfdf");
+
+    Birthday birthObj(12,26,1986);
+    
+    return 0; 
+}

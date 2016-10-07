@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/noh/Desktop/C++/spreadSheet/SpreadsheetCell.cpp
+SpreadsheetCell.h
+/home/noh/Desktop/C++/spreadSheet/SpreadsheetCell.h
+iostream
+-
+sstream
+-
+
+/home/noh/Desktop/C++/spreadSheet/SpreadsheetCell.h
+string
+-
+vector
+-
+map
+-
+iostream
+-
+memory
+-
+
