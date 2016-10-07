@@ -1,2 +1,2 @@
-/usr/bin/ar qc libsrc.a  CMakeFiles/src.dir/Alg1.o CMakeFiles/src.dir/vector.o
+/usr/bin/ar qc libsrc.a  CMakeFiles/src.dir/Alg1.o CMakeFiles/src.dir/vector.o CMakeFiles/src.dir/quadratic.o
 /usr/bin/ranlib libsrc.a

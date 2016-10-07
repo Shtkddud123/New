@@ -1,0 +1,11 @@
+
+struct my_f_params(double a, double b, double c};
+double my_function(double x, void *p)  {
+    struct my_function_pararms * params
+      }
+
+
+double r1;
+double r2;
+gsl_function ans;
+ans = gsl_poly_solve_quadratic(9.0, 6.0, 1.0, &r1, &r2);

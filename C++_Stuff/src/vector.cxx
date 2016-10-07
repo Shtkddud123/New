@@ -1,7 +1,9 @@
-#pragma once 
 #include <stdio.h>
+#include <math.h>
 #include <gsl/gsl_vector.h>
 #include <gsl/gsl_cblas.h>
+#include <gsl/gsl_poly.h>
+#include <gsl/gsl_math.h>
 #include <vector>
 #include <iterator>
 #include "vector.hpp"

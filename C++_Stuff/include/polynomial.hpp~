@@ -1,0 +1,7 @@
+#ifndef __poly__
+#define __poly__
+
+#include <stdio.h>
+#include <gsl/gsl_poly.h>
+
+#endif 

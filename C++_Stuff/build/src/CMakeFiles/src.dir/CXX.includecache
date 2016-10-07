@@ -30,6 +30,8 @@ vector
 map
 -
 
+../include/quadratic.hpp
+
 ../include/vector.hpp
 
 /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/Alg1.cxx
@@ -50,12 +52,22 @@ Geo.hpp
 StringVector.hpp
 /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/StringVector.hpp
 
+/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/quadratic.cxx
+quadratic.hpp
+/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/quadratic.hpp
+
 /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/vector.cxx
 stdio.h
+-
+math.h
 -
 gsl/gsl_vector.h
 -
 gsl/gsl_cblas.h
+-
+gsl/gsl_poly.h
+-
+gsl/gsl_math.h
 -
 vector
 -

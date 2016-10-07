@@ -141,6 +141,21 @@ Alg1.s:
 .PHONY : Alg1.s
 
 # target to build an object file
+quadratic.o:
+	cd /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build && $(MAKE) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/quadratic.o
+.PHONY : quadratic.o
+
+# target to preprocess a source file
+quadratic.i:
+	cd /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build && $(MAKE) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/quadratic.i
+.PHONY : quadratic.i
+
+# target to generate assembly for a file
+quadratic.s:
+	cd /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build && $(MAKE) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/quadratic.s
+.PHONY : quadratic.s
+
+# target to build an object file
 vector.o:
 	cd /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build && $(MAKE) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/vector.o
 .PHONY : vector.o
@@ -167,6 +182,9 @@ help:
 	@echo "... Alg1.o"
 	@echo "... Alg1.i"
 	@echo "... Alg1.s"
+	@echo "... quadratic.o"
+	@echo "... quadratic.i"
+	@echo "... quadratic.s"
 	@echo "... vector.o"
 	@echo "... vector.i"
 	@echo "... vector.s"

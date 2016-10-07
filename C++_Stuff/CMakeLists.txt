@@ -1,5 +1,5 @@
 cmake_minimum_required (VERSION 1.0)
-project (Example_Bessel)
+project (ODE_SYSTEMS)
 
 # Ensure C++11 is invoked
 
@@ -16,9 +16,11 @@ else()
 
 include_directories ("${PROJECT_SOURCE_DIR}/src")
 include_directories ("${PROJECT_SOURCE_DIR}/include")
-include_directories(${GSL_INCLUDE_DIRS} ${GSLCBLAS_INCLUDE_DIRS})
 
-add_subdirectory (src)
+include_directories(${GSL_INCLUDE_DIRS} ${GSLCBLAS_INCLUDE_DIRS})
+set(LIBS ${LIBS} ${GSL_LIBRARIES} ${GSLCBLAS_LIBRARIES})
+message(STATUS ${LIBS})
 
 add_executable (main main.cpp)
-target_link_libraries (main src)
+add_subdirectory (src)
+target_link_libraries (main src ${LIBS} ${GSL_LIBRARIES} ${GSLCBLAS_LIBRARIES})

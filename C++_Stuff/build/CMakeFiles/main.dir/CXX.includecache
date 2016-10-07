@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+../include/CustomBessel.hpp
+stdio.h
+-
+gsl/gsl_sf_bessel.h
+-
+
 ../include/CustomSet.hpp
 iostream
 -
@@ -36,6 +42,8 @@ vector
 map
 -
 
+../include/quadratic.hpp
+
 /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/main.cpp
 iostream
 -
@@ -44,6 +52,10 @@ vector
 algorithm
 -
 map
+-
+math.h
+-
+stdio.h
 -
 Object.hpp
 /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/Object.hpp
@@ -55,4 +67,18 @@ StringVector.hpp
 /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/StringVector.hpp
 CustomSet.hpp
 /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/CustomSet.hpp
+CustomBessel.hpp
+/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/CustomBessel.hpp
+quadratic.hpp
+/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/quadratic.hpp
+gsl/gsl_math.h
+-
+gsl/gsl_deriv.h
+-
+gsl/gsl_cblas.h
+-
+gsl/gsl_complex.h
+-
+gsl/gsl_poly.h
+-
 

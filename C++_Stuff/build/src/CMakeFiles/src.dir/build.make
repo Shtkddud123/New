@@ -105,19 +105,45 @@ src/CMakeFiles/src.dir/vector.o.provides: src/CMakeFiles/src.dir/vector.o.requir
 src/CMakeFiles/src.dir/vector.o.provides.build: src/CMakeFiles/src.dir/vector.o
 
 
+src/CMakeFiles/src.dir/quadratic.o: src/CMakeFiles/src.dir/flags.make
+src/CMakeFiles/src.dir/quadratic.o: ../src/quadratic.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/src.dir/quadratic.o"
+	cd /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/src.dir/quadratic.o -c /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/quadratic.cxx
+
+src/CMakeFiles/src.dir/quadratic.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/src.dir/quadratic.i"
+	cd /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/quadratic.cxx > CMakeFiles/src.dir/quadratic.i
+
+src/CMakeFiles/src.dir/quadratic.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/src.dir/quadratic.s"
+	cd /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/quadratic.cxx -o CMakeFiles/src.dir/quadratic.s
+
+src/CMakeFiles/src.dir/quadratic.o.requires:
+
+.PHONY : src/CMakeFiles/src.dir/quadratic.o.requires
+
+src/CMakeFiles/src.dir/quadratic.o.provides: src/CMakeFiles/src.dir/quadratic.o.requires
+	$(MAKE) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/quadratic.o.provides.build
+.PHONY : src/CMakeFiles/src.dir/quadratic.o.provides
+
+src/CMakeFiles/src.dir/quadratic.o.provides.build: src/CMakeFiles/src.dir/quadratic.o
+
+
 # Object files for target src
 src_OBJECTS = \
 "CMakeFiles/src.dir/Alg1.o" \
-"CMakeFiles/src.dir/vector.o"
+"CMakeFiles/src.dir/vector.o" \
+"CMakeFiles/src.dir/quadratic.o"
 
 # External object files for target src
 src_EXTERNAL_OBJECTS =
 
 src/libsrc.a: src/CMakeFiles/src.dir/Alg1.o
 src/libsrc.a: src/CMakeFiles/src.dir/vector.o
+src/libsrc.a: src/CMakeFiles/src.dir/quadratic.o
 src/libsrc.a: src/CMakeFiles/src.dir/build.make
 src/libsrc.a: src/CMakeFiles/src.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libsrc.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libsrc.a"
 	cd /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build/src && $(CMAKE_COMMAND) -P CMakeFiles/src.dir/cmake_clean_target.cmake
 	cd /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/src.dir/link.txt --verbose=$(VERBOSE)
 
@@ -128,6 +154,7 @@ src/CMakeFiles/src.dir/build: src/libsrc.a
 
 src/CMakeFiles/src.dir/requires: src/CMakeFiles/src.dir/Alg1.o.requires
 src/CMakeFiles/src.dir/requires: src/CMakeFiles/src.dir/vector.o.requires
+src/CMakeFiles/src.dir/requires: src/CMakeFiles/src.dir/quadratic.o.requires
 
 .PHONY : src/CMakeFiles/src.dir/requires
 
