@@ -1,0 +1,45 @@
+#pragma once
+#include <iostream>
+#include <cassert>
+
+using namespace std;
+
+template <class T>
+class Rectangle {
+ protected:
+  T width, height;
+ public:
+  void set_values (T a, T b) {
+    width = a;
+    height = b;
+  }
+  Rectangle() {}
+ Rectangle(T x, T y) : width(x), height(y) {}; // automatucally assign x to width, and y to height
+  T area() {return width * height;}
+  template<class S>
+    friend Rectangle<S> duplicate (const Rectangle<S>&);
+};
+
+/* Inheritance  */
+template <class T>
+class square : public Rectangle<T> {
+ public:
+  T aarea() {    
+    return this->width * this->height;
+  }
+};
+
+namespace CardGame_Scoped {
+
+  enum class Suit {Diamonds, Hearts, Clubs, Spades};
+
+  void PlayCard (Suit suit) {
+    switch(suit) {
+    case Suit::Diamonds : cout << "Diamonds \n"; break;
+    case Suit::Hearts : cout << "Hearts \n"; break;
+    case Suit::Clubs : cout << "Clubs \n"; break;
+    case Suit::Spades : cout << "Spades \n"; break;	  
+    }
+  }
+}
+

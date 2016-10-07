@@ -82,17 +82,16 @@ int main(int argc, char *argv[]){
   gsl_function F;
   struct quadratic_params params = { 1.0, 0.0, -5.0 };
   F.function = &quadratic;
-  F.params = &params;
-  
+  F.params = &params;  
   // solving 9x^2 + 6x + 1 
   gsl_function FF;
   struct quadratic_params newparams = { 9.0, 6.0, 1.0 };
   FF.function = &quadratic;
   FF.params = &newparams;
 
-  int num;
-  double sol[128];
-  nums = gsl_poly_solve_quadratic(9.0, 6.0, 1.0, &sol[0], &sol[1]);
+  // int num;
+  //double sol[128];
+  //  nums = gsl_poly_solve_quadratic(9.0, 6.0, 1.0, &sol[0], &sol[1]);
   
   return 0;
     
