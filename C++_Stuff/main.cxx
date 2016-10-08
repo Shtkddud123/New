@@ -5,6 +5,8 @@
 #include <cmath>
 #include <cstdio>
 
+// --- Custom C++ header files --- //
+
 #include "Object.hpp"
 #include "Map.hpp"
 #include "Geo.hpp"
@@ -14,16 +16,9 @@
 #include "Rectangle.hpp"
 #include "quadratic.hpp"
 
-#include "gsl.hpp"
-
-// --- Custom C++ header files --- //
-
-
-//#include "quadratic.hpp"
-
-
 // --- GSL libraries --- //
-//#include <gsl/gsl_poly.h>
+
+#include "gsl.hpp"
 
 using namespace std;
 
@@ -95,16 +90,35 @@ int main(int argc, char *argv[]) {
   struct quadratic_params newparams = { 9.0, 6.0, 1.0 };
   FF.function = &quadratic;
   FF.params = &newparams;
-
-
+  
+  int i;
   double coef[128], sol[128];
   gsl_complex csol[128];
-
+  
+  
+  /* (1) 3 * x - 2 = 0 */
+  gsl_poly_solve_quadratic(0.0, 3.0, -2.0, &sol[0], NULL);
+  printf("x = %g\n", sol[0]);
+  
+  /* (2) 2 * x^2 - 3 * x - 5 = 0 */
+  gsl_poly_solve_quadratic(9.0, +6.0, 1.0, &sol[0], &sol[1]);
+  printf("x1, x2 = %g, %g\n", sol[0], sol[1]);
+  
+  /* (3) 3 * x^2 - 5 * x + 9 = 0 */
   gsl_poly_complex_solve_quadratic(3.0, -5.0, 9.0, &csol[0], &csol[1]);
   printf("re(x1), im(x1) = %g, %g\n", GSL_REAL(csol[0]), GSL_IMAG(csol[0]));
   printf("re(x2), im(x2) = %g, %g\n", GSL_REAL(csol[1]), GSL_IMAG(csol[1]));
-
   
+  /* Solve Cubic Equation */
+  printf("\nSolve Monic Cubic Equation\n");
+  
+  /* x^3 + 2 * x^2 + 3 * x + 4 = 0 */
+  gsl_poly_complex_solve_cubic(2.0, 3.0, 4.0, &csol[0], &csol[1], &csol[2]);
+  for(i = 0; i < 3; i++)
+    printf("re(x%d), im(x%d) = %g, %g\n", i, i, GSL_REAL(csol[i]), GSL_IMAG(csol[i]));
+  
+  
+  ///  ---------
   StankFist aa;
   
   return 0;
