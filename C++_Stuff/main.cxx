@@ -4,14 +4,6 @@
 #include <map>
 #include <cmath>
 #include <cstdio>
-// --- Custom C++ header files --- //
-
-#include <gsl/gsl_math.h>
-#include <gsl/gsl_deriv.h>
-#include <gsl/gsl_cblas.h>
-#include <gsl/gsl_complex.h>
-
-#include "quadratic.hpp"
 
 #include "Object.hpp"
 #include "Map.hpp"
@@ -20,19 +12,30 @@
 #include "CustomSet.hpp"
 #include "CustomBessel.hpp"
 #include "Rectangle.hpp"
+#include "quadratic.hpp"
+
+#include "gsl.hpp"
+
+// --- Custom C++ header files --- //
+
+
+//#include "quadratic.hpp"
+
 
 // --- GSL libraries --- //
-
 //#include <gsl/gsl_poly.h>
 
 using namespace std;
 
 int main(int argc, char *argv[]) {
 
+  //  int num;
+  //double sol[128];
+  //gsl_poly_solve_quadratic(9.0, 6.0, 1.0, &sol[0], &sol[1]);
+  
   /*
     Operator overloading 
   */
-
   alg1 a(30);
   alg1 b(40);
 
@@ -82,19 +85,26 @@ int main(int argc, char *argv[]) {
   // The set defines the beseel function of first and second types ..  
   //  customSet::SET<int> besselFunctions(myints, myints+5);
   
-//  gsl_function F;
-//  struct quadratic_params params = { 1.0, 0.0, -5.0 };
-//  F.function = &quadratic;
-//  F.params = &params;  
-//  // solving 9x^2 + 6x + 1 
-//  gsl_function FF;
-//  struct quadratic_params newparams = { 9.0, 6.0, 1.0 };
-//  FF.function = &quadratic;
-//  FF.params = &newparams;
+  gsl_function F;
+  struct quadratic_params params = { 1.0, 0.0, -5.0 };
+  F.function = &quadratic;
+  F.params = &params;  
 
-  int num;
-  double sol[128];
-  gsl_poly_solve_quadratic(9.0, 6.0, 1.0, &sol[0], &sol[1]);
+  // solving 9x^2 + 6x + 1 
+  gsl_function FF;
+  struct quadratic_params newparams = { 9.0, 6.0, 1.0 };
+  FF.function = &quadratic;
+  FF.params = &newparams;
+
+
+  double coef[128], sol[128];
+  gsl_complex csol[128];
+
+  gsl_poly_complex_solve_quadratic(3.0, -5.0, 9.0, &csol[0], &csol[1]);
+  printf("re(x1), im(x1) = %g, %g\n", GSL_REAL(csol[0]), GSL_IMAG(csol[0]));
+  printf("re(x2), im(x2) = %g, %g\n", GSL_REAL(csol[1]), GSL_IMAG(csol[1]));
+
+  
   StankFist aa;
   
   return 0;

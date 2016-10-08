@@ -9,5 +9,6 @@ CMakeFiles/main.dir/main.o
  ../include/Object.hpp
  ../include/Rectangle.hpp
  ../include/StringVector.hpp
+ ../include/gsl.hpp
  ../include/quadratic.hpp
- /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/main.cpp
+ /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/main.cxx

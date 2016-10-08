@@ -39,4 +39,20 @@ void PlayCard (Suit suit) {
   }
 }
 
+class StankFist {
+public:
+  // constructor
+  StankFist(){StinkyVar = 0;}
+  ~StankFist();
+private:
+  int StinkyVar;
+  friend void stinkysFriend(StankFist &sfo); // stinkfirstobject = sfo 
+}; 
+
+void stinkysFriend(StankFist &sfo) {
+  sfo.StinkyVar = 99;
+  cout << sfo.StinkyVar << endl;
+}
+StankFist::~StankFist() {
+};
 

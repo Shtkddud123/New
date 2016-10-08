@@ -1,6 +1,8 @@
 #pragma once
 #include <vector>
 #include <map>
+#include <gsl/gsl_poly.h>
+
 using namespace std;
 
 template <class T>

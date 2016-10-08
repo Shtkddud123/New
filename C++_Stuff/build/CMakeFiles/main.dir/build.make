@@ -58,17 +58,17 @@ include CMakeFiles/main.dir/progress.make
 include CMakeFiles/main.dir/flags.make
 
 CMakeFiles/main.dir/main.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/main.o: ../main.cpp
+CMakeFiles/main.dir/main.o: ../main.cxx
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/main.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/main.o -c /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/main.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/main.o -c /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/main.cxx
 
 CMakeFiles/main.dir/main.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/main.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/main.cpp > CMakeFiles/main.dir/main.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/main.cxx > CMakeFiles/main.dir/main.i
 
 CMakeFiles/main.dir/main.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/main.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/main.cpp -o CMakeFiles/main.dir/main.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/main.cxx -o CMakeFiles/main.dir/main.s
 
 CMakeFiles/main.dir/main.o.requires:
 

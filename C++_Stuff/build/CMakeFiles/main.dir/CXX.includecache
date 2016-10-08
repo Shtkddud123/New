@@ -47,10 +47,24 @@ vector
 -
 map
 -
+gsl/gsl_poly.h
+-
+
+../include/gsl.hpp
+gsl/gsl_complex.h
+-
+gsl/gsl_cblas.h
+-
+gsl/gsl_poly.h
+-
+gsl/gsl_math.h
+-
+gsl/gsl_deriv.h
+-
 
 ../include/quadratic.hpp
 
-/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/main.cpp
+/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/main.cxx
 iostream
 -
 vector
@@ -79,14 +93,6 @@ Rectangle.hpp
 /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/Rectangle.hpp
 quadratic.hpp
 /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/quadratic.hpp
-gsl/gsl_math.h
--
-gsl/gsl_deriv.h
--
-gsl/gsl_cblas.h
--
-gsl/gsl_complex.h
--
-gsl/gsl_poly.h
--
+gsl.hpp
+/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/gsl.hpp
 

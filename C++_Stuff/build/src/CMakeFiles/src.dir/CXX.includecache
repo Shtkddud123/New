@@ -35,6 +35,8 @@ vector
 -
 map
 -
+gsl/gsl_poly.h
+-
 
 ../include/quadratic.hpp
 
@@ -75,11 +77,11 @@ stdio.h
 -
 math.h
 -
+gsl/gsl_poly.h
+-
 gsl/gsl_vector.h
 -
 gsl/gsl_cblas.h
--
-gsl/gsl_poly.h
 -
 gsl/gsl_math.h
 -

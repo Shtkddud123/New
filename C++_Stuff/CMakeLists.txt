@@ -12,15 +12,21 @@ elseif(COMPILER_SUPPORTS_CXX0X)
   set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++0x")
 else()
   message(STATUS "The compiler ${CMAKE_CXX_COMPILER} has no C++11 support. Please use a different C++ compiler.")
-  endif()
+endif()
 
 include_directories ("${PROJECT_SOURCE_DIR}/src")
 include_directories ("${PROJECT_SOURCE_DIR}/include")
-
 include_directories(${GSL_INCLUDE_DIRS} ${GSLCBLAS_INCLUDE_DIRS})
-set(LIBS ${LIBS} ${GSL_LIBRARIES} ${GSLCBLAS_LIBRARIES})
-message(STATUS ${LIBS})
-
-add_executable (main main.cpp)
 add_subdirectory (src)
-target_link_libraries (main src ${LIBS} ${GSL_LIBRARIES} ${GSLCBLAS_LIBRARIES})
+set (EXTRA_LIBS ${EXTRA_LIBS} src)
+
+
+# GSL libraries linking
+set(CMAKE_GSL_LINKER_FLAGS "${CMAKE_GSL_LINKER_FLAGS} -lgsl")
+set(CMAKE_GSL_LINKER_FLAGS_CBLAS "${CMAKE_GSL_LINKER_FLAGS_CBLAS} -lgslcblas")
+
+
+# add the executable
+add_executable (main main.cxx)
+target_link_libraries (main ${CMAKE_GSL_LINKER_FLAGS} ${CMAKE_GSL_LINKER_FLAGS_CBLAS} ${EXTRA_LIBS})
+
