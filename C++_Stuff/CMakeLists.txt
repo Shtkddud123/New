@@ -2,7 +2,6 @@ cmake_minimum_required (VERSION 1.0)
 project (ODE_SYSTEMS)
 
 # Ensure C++11 is invoked
-
 include(CheckCXXCompilerFlag)
 CHECK_CXX_COMPILER_FLAG("-std=c++11" COMPILER_SUPPORTS_CXX11)
 CHECK_CXX_COMPILER_FLAG("-std=c++0x" COMPILER_SUPPORTS_CXX0X)
@@ -14,19 +13,28 @@ else()
   message(STATUS "The compiler ${CMAKE_CXX_COMPILER} has no C++11 support. Please use a different C++ compiler.")
 endif()
 
+# include directories for headers and CXX files
+
 include_directories ("${PROJECT_SOURCE_DIR}/src")
 include_directories ("${PROJECT_SOURCE_DIR}/include")
 include_directories(${GSL_INCLUDE_DIRS} ${GSLCBLAS_INCLUDE_DIRS})
+
+# For the boost directories
+include_directories(${BOOST_INCLUDE_DIRS})
+
+message(STATUS "Boost headers: ${BOOST_INCLUDE_DIRS}")
+message(STATUS "Boost libraries: ${BOOST_LIBRARIES}")
+
+# Specifically add the src library definition for linking
+
 add_subdirectory (src)
 set (EXTRA_LIBS ${EXTRA_LIBS} src)
-
 
 # GSL libraries linking
 set(CMAKE_GSL_LINKER_FLAGS "${CMAKE_GSL_LINKER_FLAGS} -lgsl")
 set(CMAKE_GSL_LINKER_FLAGS_CBLAS "${CMAKE_GSL_LINKER_FLAGS_CBLAS} -lgslcblas")
 
-
 # add the executable
 add_executable (main main.cxx)
-target_link_libraries (main ${CMAKE_GSL_LINKER_FLAGS} ${CMAKE_GSL_LINKER_FLAGS_CBLAS} ${EXTRA_LIBS})
+target_link_libraries (main ${CMAKE_GSL_LINKER_FLAGS} ${CMAKE_GSL_LINKER_FLAGS_CBLAS} ${EXTRA_LIBS} ${BOOST_LIBRARIES})
 

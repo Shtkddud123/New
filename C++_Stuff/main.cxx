@@ -19,18 +19,15 @@
 // --- GSL libraries --- //
 
 #include "gsl.hpp"
+#include "boostlib.hpp"
 
 using namespace std;
+using namespace boost::numeric::odeint;
+
 
 int main(int argc, char *argv[]) {
-
-  //  int num;
-  //double sol[128];
-  //gsl_poly_solve_quadratic(9.0, 6.0, 1.0, &sol[0], &sol[1]);
   
-  /*
-    Operator overloading 
-  */
+  StankFist aa;  
   alg1 a(30);
   alg1 b(40);
 
@@ -114,12 +111,10 @@ int main(int argc, char *argv[]) {
   
   /* x^3 + 2 * x^2 + 3 * x + 4 = 0 */
   gsl_poly_complex_solve_cubic(2.0, 3.0, 4.0, &csol[0], &csol[1], &csol[2]);
+
   for(i = 0; i < 3; i++)
     printf("re(x%d), im(x%d) = %g, %g\n", i, i, GSL_REAL(csol[i]), GSL_IMAG(csol[i]));
-  
-  
-  ///  ---------
-  StankFist aa;
+    
   
   return 0;
     
