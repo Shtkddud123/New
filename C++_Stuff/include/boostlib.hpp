@@ -5,8 +5,5 @@
 Include the boost libraries  
  */
 
-#include <boost/array.hpp>
-#include <boost/numeric/odeint.hpp>
-
 #endif 
 

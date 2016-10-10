@@ -7,6 +7,9 @@ src/CMakeFiles/src.dir/Alg1.o: ../include/Object.hpp
 src/CMakeFiles/src.dir/Alg1.o: ../include/StringVector.hpp
 src/CMakeFiles/src.dir/Alg1.o: ../src/Alg1.cxx
 
+src/CMakeFiles/src.dir/constructor.o: ../include/constructor.hpp
+src/CMakeFiles/src.dir/constructor.o: ../src/constructor.cxx
+
 src/CMakeFiles/src.dir/friendFunction.o: ../include/Rectangle.hpp
 src/CMakeFiles/src.dir/friendFunction.o: ../src/friendFunction.cxx
 

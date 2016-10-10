@@ -38,6 +38,8 @@ map
 gsl/gsl_poly.h
 -
 
+../include/constructor.hpp
+
 ../include/quadratic.hpp
 
 ../include/vector.hpp
@@ -59,6 +61,20 @@ Geo.hpp
 /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/Geo.hpp
 StringVector.hpp
 /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/StringVector.hpp
+
+/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/constructor.cxx
+iostream
+-
+cmath
+-
+typeinfo
+-
+string
+-
+vector
+-
+constructor.hpp
+/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/constructor.hpp
 
 /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/friendFunction.cxx
 iostream

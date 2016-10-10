@@ -95,4 +95,8 @@ quadratic.hpp
 /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/quadratic.hpp
 gsl.hpp
 /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/gsl.hpp
+boost/array.hpp
+-
+boost/numeric/odeint.hpp
+-
 

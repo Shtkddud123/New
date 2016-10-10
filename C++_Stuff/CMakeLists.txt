@@ -18,12 +18,7 @@ endif()
 include_directories ("${PROJECT_SOURCE_DIR}/src")
 include_directories ("${PROJECT_SOURCE_DIR}/include")
 include_directories(${GSL_INCLUDE_DIRS} ${GSLCBLAS_INCLUDE_DIRS})
-
-# For the boost directories
 include_directories(${BOOST_INCLUDE_DIRS})
-
-message(STATUS "Boost headers: ${BOOST_INCLUDE_DIRS}")
-message(STATUS "Boost libraries: ${BOOST_LIBRARIES}")
 
 # Specifically add the src library definition for linking
 
@@ -33,6 +28,7 @@ set (EXTRA_LIBS ${EXTRA_LIBS} src)
 # GSL libraries linking
 set(CMAKE_GSL_LINKER_FLAGS "${CMAKE_GSL_LINKER_FLAGS} -lgsl")
 set(CMAKE_GSL_LINKER_FLAGS_CBLAS "${CMAKE_GSL_LINKER_FLAGS_CBLAS} -lgslcblas")
+#set(BOOST_LIBRARIES "${BOOST_LIBRARIES} -lboost_system")
 
 # add the executable
 add_executable (main main.cxx)

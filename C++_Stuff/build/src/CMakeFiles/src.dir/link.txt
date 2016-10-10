@@ -1,2 +1,2 @@
-/usr/bin/ar qc libsrc.a  CMakeFiles/src.dir/Alg1.o CMakeFiles/src.dir/vector.o CMakeFiles/src.dir/quadratic.o CMakeFiles/src.dir/friendFunction.o
+/usr/bin/ar qc libsrc.a  CMakeFiles/src.dir/Alg1.o CMakeFiles/src.dir/vector.o CMakeFiles/src.dir/quadratic.o CMakeFiles/src.dir/friendFunction.o CMakeFiles/src.dir/constructor.o
 /usr/bin/ranlib libsrc.a
