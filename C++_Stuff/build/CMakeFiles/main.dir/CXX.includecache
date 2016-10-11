@@ -50,6 +50,8 @@ map
 gsl/gsl_poly.h
 -
 
+../include/constructor.hpp
+
 ../include/gsl.hpp
 gsl/gsl_complex.h
 -
@@ -61,6 +63,24 @@ gsl/gsl_math.h
 -
 gsl/gsl_deriv.h
 -
+gsl/gsl_vector.h
+-
+gsl/gsl_matrix.h
+-
+gsl/gsl_linalg.h
+-
+gsl/gsl_randist.h
+-
+gsl/gsl_cdf.h
+-
+
+../include/gslmat.hpp
+iostream
+-
+vector
+-
+gsl.hpp
+../include/gsl.hpp
 
 ../include/quadratic.hpp
 
@@ -76,6 +96,8 @@ map
 cmath
 -
 cstdio
+-
+string
 -
 Object.hpp
 /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/Object.hpp
@@ -93,8 +115,12 @@ Rectangle.hpp
 /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/Rectangle.hpp
 quadratic.hpp
 /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/quadratic.hpp
+constructor.hpp
+/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/constructor.hpp
 gsl.hpp
 /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/gsl.hpp
+gslmat.hpp
+/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/gslmat.hpp
 boost/array.hpp
 -
 boost/numeric/odeint.hpp

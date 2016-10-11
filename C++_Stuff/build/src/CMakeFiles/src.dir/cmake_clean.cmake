@@ -1,9 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/src.dir/Alg1.o"
+  "CMakeFiles/src.dir/alg1.o"
   "CMakeFiles/src.dir/vector.o"
   "CMakeFiles/src.dir/quadratic.o"
   "CMakeFiles/src.dir/friendFunction.o"
   "CMakeFiles/src.dir/constructor.o"
+  "CMakeFiles/src.dir/matrix.o"
   "libsrc.pdb"
   "libsrc.a"
 )

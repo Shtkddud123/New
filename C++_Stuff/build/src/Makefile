@@ -126,19 +126,19 @@ src/fast:
 .PHONY : src/fast
 
 # target to build an object file
-Alg1.o:
-	cd /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build && $(MAKE) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/Alg1.o
-.PHONY : Alg1.o
+alg1.o:
+	cd /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build && $(MAKE) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/alg1.o
+.PHONY : alg1.o
 
 # target to preprocess a source file
-Alg1.i:
-	cd /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build && $(MAKE) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/Alg1.i
-.PHONY : Alg1.i
+alg1.i:
+	cd /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build && $(MAKE) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/alg1.i
+.PHONY : alg1.i
 
 # target to generate assembly for a file
-Alg1.s:
-	cd /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build && $(MAKE) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/Alg1.s
-.PHONY : Alg1.s
+alg1.s:
+	cd /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build && $(MAKE) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/alg1.s
+.PHONY : alg1.s
 
 # target to build an object file
 constructor.o:
@@ -169,6 +169,21 @@ friendFunction.i:
 friendFunction.s:
 	cd /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build && $(MAKE) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/friendFunction.s
 .PHONY : friendFunction.s
+
+# target to build an object file
+matrix.o:
+	cd /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build && $(MAKE) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/matrix.o
+.PHONY : matrix.o
+
+# target to preprocess a source file
+matrix.i:
+	cd /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build && $(MAKE) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/matrix.i
+.PHONY : matrix.i
+
+# target to generate assembly for a file
+matrix.s:
+	cd /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build && $(MAKE) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/matrix.s
+.PHONY : matrix.s
 
 # target to build an object file
 quadratic.o:
@@ -209,15 +224,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... src"
-	@echo "... Alg1.o"
-	@echo "... Alg1.i"
-	@echo "... Alg1.s"
+	@echo "... alg1.o"
+	@echo "... alg1.i"
+	@echo "... alg1.s"
 	@echo "... constructor.o"
 	@echo "... constructor.i"
 	@echo "... constructor.s"
 	@echo "... friendFunction.o"
 	@echo "... friendFunction.i"
 	@echo "... friendFunction.s"
+	@echo "... matrix.o"
+	@echo "... matrix.i"
+	@echo "... matrix.s"
 	@echo "... quadratic.o"
 	@echo "... quadratic.i"
 	@echo "... quadratic.s"

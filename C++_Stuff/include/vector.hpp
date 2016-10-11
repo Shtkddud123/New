@@ -1,4 +1,4 @@
-#pragma none 
+#pragma none
 #ifndef VEC_H
 #define VEC_H
 

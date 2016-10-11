@@ -40,11 +40,41 @@ gsl/gsl_poly.h
 
 ../include/constructor.hpp
 
+../include/gsl.hpp
+gsl/gsl_complex.h
+-
+gsl/gsl_cblas.h
+-
+gsl/gsl_poly.h
+-
+gsl/gsl_math.h
+-
+gsl/gsl_deriv.h
+-
+gsl/gsl_vector.h
+-
+gsl/gsl_matrix.h
+-
+gsl/gsl_linalg.h
+-
+gsl/gsl_randist.h
+-
+gsl/gsl_cdf.h
+-
+
+../include/gslmat.hpp
+iostream
+-
+vector
+-
+gsl.hpp
+../include/gsl.hpp
+
 ../include/quadratic.hpp
 
 ../include/vector.hpp
 
-/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/Alg1.cxx
+/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/alg1.cxx
 iostream
 -
 vector
@@ -83,6 +113,12 @@ vector
 -
 Rectangle.hpp
 /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/Rectangle.hpp
+
+/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/matrix.cxx
+gslmat.hpp
+/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/gslmat.hpp
+gsl.hpp
+/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/gsl.hpp
 
 /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/quadratic.cxx
 quadratic.hpp

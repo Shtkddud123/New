@@ -8,7 +8,9 @@ CMakeFiles/main.dir/main.o: ../include/Map.hpp
 CMakeFiles/main.dir/main.o: ../include/Object.hpp
 CMakeFiles/main.dir/main.o: ../include/Rectangle.hpp
 CMakeFiles/main.dir/main.o: ../include/StringVector.hpp
+CMakeFiles/main.dir/main.o: ../include/constructor.hpp
 CMakeFiles/main.dir/main.o: ../include/gsl.hpp
+CMakeFiles/main.dir/main.o: ../include/gslmat.hpp
 CMakeFiles/main.dir/main.o: ../include/quadratic.hpp
 CMakeFiles/main.dir/main.o: ../main.cxx
 

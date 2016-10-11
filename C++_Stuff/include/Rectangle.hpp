@@ -4,6 +4,9 @@
 
 using namespace std;
 
+
+
+
 template <class T>
 class Rectangle {
  protected:
@@ -39,20 +42,22 @@ void PlayCard (Suit suit) {
   }
 }
 
-class StankFist {
+class FriendF {
 public:
+  
   // constructor
-  StankFist(){StinkyVar = 0;}
-  ~StankFist();
+  FriendF(){StinkyVar = 0;}
+  ~FriendF();
+
 private:
-  int StinkyVar;
-  friend void stinkysFriend(StankFist &sfo); // stinkfirstobject = sfo 
+  int FriendVar;
+  friend void FFriend(FriendF &sfo); // stinkfirstobject = sfo 
 }; 
 
-void stinkysFriend(StankFist &sfo) {
-  sfo.StinkyVar = 99;
-  cout << sfo.StinkyVar << endl;
+void FFriend(FriendF &sfo) {
+  sfo.FriendVar = 99;
+  cout << FriendVar << endl;
 }
-StankFist::~StankFist() {
+FriendF::~FriendF() {
 };
 

@@ -2,9 +2,9 @@
 #include <iostream>
 #include <set>
 
-namespace customSet {
-
-  template <typename X> 
-  using SET = std::set<X>; // C++11 templated type 
+namespace customSet 
+{
+template <typename Y> 
+  using SET = std::set<Y>; // C++11 templated type 
    
 }

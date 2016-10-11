@@ -1,3 +1,7 @@
+/*
+Functions for calculating quadratic equations 
+*/
+
 #include "quadratic.hpp"
 
 double quadratic(double x, void *params)

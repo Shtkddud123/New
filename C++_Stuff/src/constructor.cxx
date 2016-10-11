@@ -20,6 +20,7 @@ double Line::getLength(void) {
   return length;
 }
 
+
 template<class T, class U>
 auto hello<T, U>::add(T t, U u) -> decltype(t + u) {
   return t + u;
@@ -34,6 +35,4 @@ auto hello<T, U>::get_fun(int arg) -> double (*)(double) {
     default: return cos;
     }
 }
-
-
 
