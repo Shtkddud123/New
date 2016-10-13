@@ -20,6 +20,9 @@ src/CMakeFiles/src.dir/matrix.o: ../src/matrix.cxx
 src/CMakeFiles/src.dir/quadratic.o: ../include/quadratic.hpp
 src/CMakeFiles/src.dir/quadratic.o: ../src/quadratic.cxx
 
+src/CMakeFiles/src.dir/sedgewick.o: ../include/sedgewickalg.hpp
+src/CMakeFiles/src.dir/sedgewick.o: ../src/sedgewick.cxx
+
 src/CMakeFiles/src.dir/vector.o: ../include/vector.hpp
 src/CMakeFiles/src.dir/vector.o: ../src/vector.cxx
 

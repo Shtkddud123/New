@@ -73,6 +73,8 @@ gsl/gsl_randist.h
 -
 gsl/gsl_cdf.h
 -
+gsl/gsl_rng.h
+-
 
 ../include/gslmat.hpp
 iostream
@@ -83,6 +85,16 @@ gsl.hpp
 ../include/gsl.hpp
 
 ../include/quadratic.hpp
+
+../include/sedgewickalg.hpp
+gsl/gsl_cdf.h
+-
+gsl/gsl_rng.h
+-
+gsl/gsl_randist.h
+-
+cstdio
+-
 
 /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/main.cxx
 iostream
@@ -125,4 +137,6 @@ boost/array.hpp
 -
 boost/numeric/odeint.hpp
 -
+sedgewickalg.hpp
+/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/sedgewickalg.hpp
 

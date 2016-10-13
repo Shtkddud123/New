@@ -20,6 +20,9 @@ src/CMakeFiles/src.dir/matrix.o
 src/CMakeFiles/src.dir/quadratic.o
  ../include/quadratic.hpp
  /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/quadratic.cxx
+src/CMakeFiles/src.dir/sedgewick.o
+ ../include/sedgewickalg.hpp
+ /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/sedgewick.cxx
 src/CMakeFiles/src.dir/vector.o
  ../include/vector.hpp
  /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/vector.cxx

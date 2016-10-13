@@ -61,6 +61,8 @@ gsl/gsl_randist.h
 -
 gsl/gsl_cdf.h
 -
+gsl/gsl_rng.h
+-
 
 ../include/gslmat.hpp
 iostream
@@ -71,6 +73,16 @@ gsl.hpp
 ../include/gsl.hpp
 
 ../include/quadratic.hpp
+
+../include/sedgewickalg.hpp
+gsl/gsl_cdf.h
+-
+gsl/gsl_rng.h
+-
+gsl/gsl_randist.h
+-
+cstdio
+-
 
 ../include/vector.hpp
 
@@ -123,6 +135,26 @@ gsl.hpp
 /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/quadratic.cxx
 quadratic.hpp
 /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/quadratic.hpp
+
+/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/sedgewick.cxx
+sedgewickalg.hpp
+/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/sedgewickalg.hpp
+gsl/gsl_cdf.h
+-
+gsl/gsl_rng.h
+-
+gsl/gsl_randist.h
+-
+cstdio
+-
+iostream
+-
+array
+-
+functional
+-
+numeric
+-
 
 /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/vector.cxx
 stdio.h

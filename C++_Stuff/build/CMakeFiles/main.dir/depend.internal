@@ -13,4 +13,5 @@ CMakeFiles/main.dir/main.o
  ../include/gsl.hpp
  ../include/gslmat.hpp
  ../include/quadratic.hpp
+ ../include/sedgewickalg.hpp
  /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/main.cxx

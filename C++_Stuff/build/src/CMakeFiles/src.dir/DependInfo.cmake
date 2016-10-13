@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/friendFunction.cxx" "/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build/src/CMakeFiles/src.dir/friendFunction.o"
   "/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/matrix.cxx" "/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build/src/CMakeFiles/src.dir/matrix.o"
   "/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/quadratic.cxx" "/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build/src/CMakeFiles/src.dir/quadratic.o"
+  "/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/sedgewick.cxx" "/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build/src/CMakeFiles/src.dir/sedgewick.o"
   "/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/vector.cxx" "/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build/src/CMakeFiles/src.dir/vector.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

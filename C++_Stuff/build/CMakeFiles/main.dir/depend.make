@@ -12,5 +12,6 @@ CMakeFiles/main.dir/main.o: ../include/constructor.hpp
 CMakeFiles/main.dir/main.o: ../include/gsl.hpp
 CMakeFiles/main.dir/main.o: ../include/gslmat.hpp
 CMakeFiles/main.dir/main.o: ../include/quadratic.hpp
+CMakeFiles/main.dir/main.o: ../include/sedgewickalg.hpp
 CMakeFiles/main.dir/main.o: ../main.cxx
 

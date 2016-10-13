@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/src.dir/friendFunction.o"
   "CMakeFiles/src.dir/constructor.o"
   "CMakeFiles/src.dir/matrix.o"
+  "CMakeFiles/src.dir/sedgewick.o"
   "libsrc.pdb"
   "libsrc.a"
 )

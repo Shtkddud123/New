@@ -201,6 +201,21 @@ quadratic.s:
 .PHONY : quadratic.s
 
 # target to build an object file
+sedgewick.o:
+	cd /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build && $(MAKE) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/sedgewick.o
+.PHONY : sedgewick.o
+
+# target to preprocess a source file
+sedgewick.i:
+	cd /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build && $(MAKE) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/sedgewick.i
+.PHONY : sedgewick.i
+
+# target to generate assembly for a file
+sedgewick.s:
+	cd /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build && $(MAKE) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/sedgewick.s
+.PHONY : sedgewick.s
+
+# target to build an object file
 vector.o:
 	cd /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/build && $(MAKE) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/vector.o
 .PHONY : vector.o
@@ -239,6 +254,9 @@ help:
 	@echo "... quadratic.o"
 	@echo "... quadratic.i"
 	@echo "... quadratic.s"
+	@echo "... sedgewick.o"
+	@echo "... sedgewick.i"
+	@echo "... sedgewick.s"
 	@echo "... vector.o"
 	@echo "... vector.i"
 	@echo "... vector.s"
