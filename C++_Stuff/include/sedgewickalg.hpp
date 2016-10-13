@@ -8,14 +8,20 @@
 
 class flips {
 public:
+
   flips(int); // constructor flips
   ~flips(); // destructor flips
   void printFlips();  
+  void printDiff();
+
 private:
   int TT;
   const gsl_rng_type * T;
   gsl_rng * r;
   int i, n;
   double mu;
+  int heads;
+  int tails;
+  int difference; 
 };
 #endif 

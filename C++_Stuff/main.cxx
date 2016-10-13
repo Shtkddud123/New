@@ -204,9 +204,10 @@ int main(int argc, char *argv[]) {
   gsl_matrix A;
   initiateMatrix firstMatrix(&A,3,10);  
 
-  flips aA(100);
+  flips aA(1000000);
   aA.printFlips();
-  
+  aA.printDiff();
+
   return 0;
     
 }
