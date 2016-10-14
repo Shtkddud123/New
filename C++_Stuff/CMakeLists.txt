@@ -29,9 +29,9 @@ set (EXTRA_LIBS ${EXTRA_LIBS} src)
 set(CMAKE_GSL_LINKER_FLAGS "${CMAKE_GSL_LINKER_FLAGS} -lgsl")
 set(CMAKE_GSL_LINKER_FLAGS_CBLAS "${CMAKE_GSL_LINKER_FLAGS_CBLAS} -lgslcblas")
 set(MATH "${MATH} -lm")
-#set(BOOST_LIBRARIES "${BOOST_LIBRARIES} -lboost_system")
+set(BOOST_FILE "${BOOST_FILE} -lboost_filesystem")
 
 # add the executable
 add_executable (main main.cxx)
-target_link_libraries (main ${CMAKE_GSL_LINKER_FLAGS} ${CMAKE_GSL_LINKER_FLAGS_CBLAS} ${EXTRA_LIBS} ${BOOST_LIBRARIES} ${MATH})
+target_link_libraries (main ${CMAKE_GSL_LINKER_FLAGS} ${CMAKE_GSL_LINKER_FLAGS_CBLAS} ${EXTRA_LIBS} ${BOOST_LIBRARIES} ${BOOST_FILE} ${MATH})
 

@@ -24,4 +24,14 @@ private:
   int tails;
   int difference; 
 };
+
+class Whitelist  {
+
+public:
+
+  
+private:
+
+};
+
 #endif 

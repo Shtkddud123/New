@@ -7,7 +7,6 @@
 #include <string>
 
 // --- Custom C++ header files --- //
-
 #include "Object.hpp"
 #include "Map.hpp"
 #include "Geo.hpp"
@@ -29,47 +28,49 @@
 // --- Algorithms libraries --- //
 
 #include "sedgewickalg.hpp"
+//#include "line.hpp"
 
 using namespace std;
 using namespace boost::numeric::odeint;
   
-//  /* The type of container used to hold the state vector */
-//  typedef std::vector<double> state_type;
-//
-//  const double gam = 0.15;
-//
-//  /* The rhs of x' = f(x) */
-//  void harmonic_oscillator( const state_type &x , state_type &dxdt , const double /* t */ )
-//  {
-//    dxdt[0] = x[1];
-//    dxdt[1] = -x[0] - gam*x[1];
-//  }
-//
-//  //[ rhs_class
-//  /* The rhs of x' = f(x) defined as a class */
-//  class harm_osc {
-//
-//    double m_gam;
-//
-//  public:
-//    harm_osc( double gam ) : m_gam(gam) { }
-//
-//    void operator() ( const state_type &x , state_type &dxdt , const double /* t */ )
-//    {
-//      dxdt[0] = x[1];
-//      dxdt[1] = -x[0] - m_gam*x[1];
-//    }
-//  };
-//
+  /* The type of container used to hold the state vector */
+  typedef std::vector<double> state_type;
+
+  const double gam = 0.15;
+
+  /* The rhs of x' = f(x) */
+  void harmonic_oscillator( const state_type &x , state_type &dxdt , const double /* t */ )
+  {
+    dxdt[0] = x[1];
+    dxdt[1] = -x[0] - gam*x[1];
+  }
+
+  //[ rhs_class
+  /* The rhs of x' = f(x) defined as a class */
+  class harm_osc {
+
+    double m_gam;
+
+  public:
+    harm_osc( double gam ) : m_gam(gam) { }
+
+    void operator() ( const state_type &x , state_type &dxdt , const double /* t */ )
+    {
+      dxdt[0] = x[1];
+      dxdt[1] = -x[0] - m_gam*x[1];
+    }
+  };
+
 
 int main(int argc, char *argv[]) {
-
   
   alg1 a(30);
   alg1 b(40);
 
+  // Testing the operator()
   alg1 c;
-  c = a +b;
+
+  c = a + b;
   std::cout << c.num << std::endl;
 
   Box Box1(2.2,1.2,1.5);
@@ -147,56 +148,10 @@ int main(int argc, char *argv[]) {
   
   /* x^3 + 2 * x^2 + 3 * x + 4 = 0 */
   gsl_poly_complex_solve_cubic(2.0, 3.0, 4.0, &csol[0], &csol[1], &csol[2]);
-
+  
   for(i = 0; i < 3; i++)
     printf("re(x%d), im(x%d) = %g, %g\n", i, i, GSL_REAL(csol[i]), GSL_IMAG(csol[i]));
   
-  
-  //  hello<int, int> helloexample;
-  
-  //  decltype(B) dfdf;
-  //dfdf = helloexample.add(1,2);      
-  //cout << dfdf << endl;
-  
-    
-//  auto A = 1 + 2;
-//  cout << "type of a = " << ' ' << typeid(A).name() << '\n';
-//
-//  auto AA = 2.3 + 1.3;
-//  cout << "type of aa = " << ' ' << typeid(AA).name() << '\n';
-//
-//  string d = "dfdf";
-//  
-//  auto dsd = d + d;
-//  cout << "type of dsd = " << ' ' << typeid(dsd).name() << '\n';
-//
-//  Line line;
-//  
-//  // set line length 
-//  line.setLength(6.0);
-//  cout << "Length of line : " << line.getLength() << endl;
-//
-//  // Exception handling 
-//  // Exception is a way of handling error that might occur when the
-//  // Program is running.
-//
-//  auto my_fun = helloexample.get_fun(2);
-//  cout << typeid(my_fun).name() << endl;
-//  cout << my_fun(3) << endl;
-//  
-//  try { 
-//    
-//    if (my_fun(3) == fabs(3)) { // Here, a sin will be the return value, but say that we didn't want to return this 
-//      throw 99;
-//    }
-//    else if (my_fun(3) == sin(3)) {
-//    } throw 98; 
-//   
-//  } catch(int x) {
-//    cout << "sin is the not right value" << x << endl;
-//  } // catch is there to handle the error - catching the erro   
-//   
-
   // boost array 
   typedef boost::array<std::string, 3> array;
   array ARR;
@@ -206,8 +161,8 @@ int main(int argc, char *argv[]) {
 
   flips aA(1000000);
   aA.printFlips();
-  aA.printDiff();
-
+  aA.printDiff();  
+  
   return 0;
     
 }

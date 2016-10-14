@@ -1,0 +1,16 @@
+#ifndef __LINE__
+#define __LINE__
+
+class Line 
+{
+public:
+  void setLength (double len);
+  double getLength (void);
+  Line(); // This is the constructor 
+  ~Line(); // This is the constructor 
+
+private:
+  double length;
+};
+
+#endif
