@@ -23,6 +23,10 @@ vector
 -
 map
 -
+boost/random/mersenne_twister.hpp
+-
+boost/random/uniform_int_distribution.hpp
+-
 
 ../include/Rectangle.hpp
 iostream
@@ -63,6 +67,8 @@ gsl/gsl_cdf.h
 -
 gsl/gsl_rng.h
 -
+gsl/gsl_sf_gamma.h
+-
 
 ../include/gslmat.hpp
 iostream
@@ -94,6 +100,10 @@ vector
 algorithm
 -
 map
+-
+boost/random/mersenne_twister.hpp
+-
+boost/random/uniform_int_distribution.hpp
 -
 Object.hpp
 /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/Object.hpp

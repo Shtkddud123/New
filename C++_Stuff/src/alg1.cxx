@@ -3,6 +3,11 @@
 #include <algorithm>
 #include <map>
 
+// Boost algorithms
+
+#include <boost/random/mersenne_twister.hpp>
+#include <boost/random/uniform_int_distribution.hpp>
+
 #include "Object.hpp"
 #include "Map.hpp"
 #include "Geo.hpp"
@@ -10,21 +15,49 @@
 
 using namespace std;
 
-alg1::alg1() {
+MCalg::MCalg() {
 }
 
-alg1::alg1(int a) {
-  num = a; 
+MCalg::MCalg(int a) {
+  num = a; // Number of hits for Pi 
 }
 
-alg1 alg1::operator+(alg1 aso) { // a sallyo object 
-  alg1 brandNew;
+int MCalg::randist() {
+  boost::random::mt19937 randgen;
+  boost::random::uniform_int_distribution<> dist(-1, 1);
+ return dist(randgen);
+}
+
+void MCalg::direct_pi() {
+
+  for (int i = 0; i < num; i++) {
+    
+    int x = MCalg::randist(); 
+    int y = MCalg::randist();
+
+    if ( ((x*x) + (y*y)) < 1 ) {
+      N_hits = N_hits + 1;
+    }
+  }
+}
+
+MCalg MCalg::operator+(MCalg aso) { // a sallyo object 
+
+  MCalg brandNew;
+
   // new sally object num is this->num + aso.nu,
-  brandNew.num =  this->num + aso.num;
+
+  brandNew.num = this->num + aso.num;
+
   return(brandNew); // returns the brandnew sally object 
+
 }
+
+
+
 
 mapexample::mapexample() {}
+
 mapexample::~mapexample() {}
 void mapexample::addtomap(char a, int b) {
   mymap[a] = b;

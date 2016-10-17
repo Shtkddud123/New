@@ -35,6 +35,10 @@ vector
 -
 map
 -
+boost/random/mersenne_twister.hpp
+-
+boost/random/uniform_int_distribution.hpp
+-
 
 ../include/Rectangle.hpp
 iostream
@@ -74,6 +78,8 @@ gsl/gsl_randist.h
 gsl/gsl_cdf.h
 -
 gsl/gsl_rng.h
+-
+gsl/gsl_sf_gamma.h
 -
 
 ../include/gslmat.hpp

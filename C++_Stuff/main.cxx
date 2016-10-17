@@ -64,14 +64,15 @@ using namespace boost::numeric::odeint;
 
 int main(int argc, char *argv[]) {
   
-  alg1 a(30);
-  alg1 b(40);
+  MCalg a(30);
+  MCalg b(40);
 
   // Testing the operator()
-  alg1 c;
 
-  c = a + b;
-  std::cout << c.num << std::endl;
+  // alg1 c;
+
+  //c = a + b;
+  //std::cout << c.num << std::endl;
 
   Box Box1(2.2,1.2,1.5);
   Box Box2(8.5,6.0,2.0);
