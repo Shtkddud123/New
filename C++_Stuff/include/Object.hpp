@@ -1,6 +1,9 @@
 #pragma once
 #include <vector>
 #include <map>
+#include <random>
+
+
 #include <boost/random/mersenne_twister.hpp>
 #include <boost/random/uniform_int_distribution.hpp>
 
@@ -21,10 +24,13 @@ public:
   //~MCalg();
   
   MCalg operator+(MCalg); 
-  int randist();
-  void direct_pi();
- 
+  double randist(); // distribution function 
+  void direct_pi(); // approximtion of pi
+  void print_pi();
+  void print_xy();
 private:
   int num;
   int N_hits = 0;
+  double x;
+  double y;
 };

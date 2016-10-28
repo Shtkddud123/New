@@ -22,23 +22,39 @@ MCalg::MCalg(int a) {
   num = a; // Number of hits for Pi 
 }
 
-int MCalg::randist() {
-  boost::random::mt19937 randgen;
-  boost::random::uniform_int_distribution<> dist(-1, 1);
- return dist(randgen);
+double MCalg::randist() {
+  std::uniform_real_distribution<double> unif(-1,1);
+  std::default_random_engine re;
+  // boost::random::mt19937 randgen;
+  // boost::random::uniform_int_distribution<> dist(-1, 1);
+  return unif(re);
 }
 
 void MCalg::direct_pi() {
 
   for (int i = 0; i < num; i++) {
     
-    int x = MCalg::randist(); 
-    int y = MCalg::randist();
+    x = MCalg::randist(); 
+    y = MCalg::randist();
 
+    std::cout << x << std::endl;
+    std::cout << y << std::endl;
+    
     if ( ((x*x) + (y*y)) < 1 ) {
       N_hits = N_hits + 1;
     }
+
   }
+
+}
+
+void MCalg::print_pi() {
+  std::cout << N_hits << std::endl;
+}
+
+void MCalg::print_xy() {
+  std::cout << x << std::endl;
+  std::cout << y << std::endl;
 }
 
 MCalg MCalg::operator+(MCalg aso) { // a sallyo object 
@@ -52,9 +68,6 @@ MCalg MCalg::operator+(MCalg aso) { // a sallyo object
   return(brandNew); // returns the brandnew sally object 
 
 }
-
-
-
 
 mapexample::mapexample() {}
 

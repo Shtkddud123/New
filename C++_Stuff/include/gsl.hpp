@@ -6,7 +6,7 @@
 #include <gsl/gsl_poly.h>
 #include <gsl/gsl_math.h>
 #include <gsl/gsl_deriv.h>
-
+#include <gsl/gsl_blas.h>
 // Vectors
 
 #include <gsl/gsl_vector.h>

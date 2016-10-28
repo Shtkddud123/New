@@ -28,6 +28,7 @@
 // --- Algorithms libraries --- //
 
 #include "sedgewickalg.hpp"
+
 //#include "line.hpp"
 
 using namespace std;
@@ -64,9 +65,10 @@ using namespace boost::numeric::odeint;
 
 int main(int argc, char *argv[]) {
   
-  MCalg a(30);
-  MCalg b(40);
-
+  MCalg a(3000);
+  a.direct_pi();
+  a.print_pi();
+  a.print_xy();
   // Testing the operator()
 
   // alg1 c;

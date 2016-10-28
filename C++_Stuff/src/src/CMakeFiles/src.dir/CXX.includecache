@@ -57,8 +57,6 @@ gsl/gsl_math.h
 -
 gsl/gsl_deriv.h
 -
-gsl/gsl_blas.h
--
 gsl/gsl_vector.h
 -
 gsl/gsl_matrix.h
