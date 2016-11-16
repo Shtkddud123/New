@@ -32,9 +32,7 @@ void flips::printFlips() {
   /* print n random variates chosen from 
      the bernoulli distribution with mean 
      parameter mu */
-
-  // Initialize the heads and tails value 
-  
+  // Initialize the heads and tails value   
   heads = 0;
   tails = 0;
 

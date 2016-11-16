@@ -2,11 +2,12 @@
 #include <vector>
 #include <algorithm>
 #include <map>
-
+#include <string>
 // Boost algorithms
 
 #include <boost/random/mersenne_twister.hpp>
 #include <boost/random/uniform_int_distribution.hpp>
+#include <boost/tuple/tuple.hpp>
 
 #include "Object.hpp"
 #include "Map.hpp"
@@ -70,13 +71,15 @@ MCalg MCalg::operator+(MCalg aso) { // a sallyo object
 }
 
 mapexample::mapexample() {}
-
 mapexample::~mapexample() {}
 void mapexample::addtomap(char a, int b) {
   mymap[a] = b;
 }
+
 void mapexample::printmap() {
   for (map<char,int>::iterator it=mymap.begin(); it!=mymap.end(); ++it) {
     cout << it->first << " => " << it->second << '\n';
   }
 }
+
+

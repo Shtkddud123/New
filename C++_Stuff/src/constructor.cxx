@@ -36,3 +36,5 @@ auto hello<T, U>::get_fun(int arg) -> double (*)(double) {
     }
 }
 
+
+

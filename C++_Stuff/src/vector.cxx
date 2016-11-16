@@ -12,10 +12,8 @@ std::vector<gsl_vector*> a;
 std::vector<gsl_vector*>::iterator iter;   
 
   int lda = 3;
-
   float A[] = { 0.11, 0.12, 0.13,
 		0.21, 0.22, 0.23 };
-
 
 //  int ldb = 2;
 //

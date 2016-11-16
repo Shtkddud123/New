@@ -69,6 +69,8 @@ gsl/gsl_math.h
 -
 gsl/gsl_deriv.h
 -
+gsl/gsl_blas.h
+-
 gsl/gsl_vector.h
 -
 gsl/gsl_matrix.h
@@ -113,11 +115,15 @@ algorithm
 -
 map
 -
+string
+-
 cmath
 -
 cstdio
 -
-string
+ctime
+-
+cstdlib
 -
 Object.hpp
 /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/Object.hpp
@@ -144,6 +150,8 @@ gslmat.hpp
 boost/array.hpp
 -
 boost/numeric/odeint.hpp
+-
+boost/math/distributions.hpp
 -
 sedgewickalg.hpp
 /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/sedgewickalg.hpp

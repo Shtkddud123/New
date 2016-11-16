@@ -1,12 +1,14 @@
 #include <iostream>
 #include <vector>
+#include <string>
+#include <typeinfo>
+
 #include "Rectangle.hpp"
 
+#include <boost/tuple/tuple.hpp>
+
 using namespace std;
-
-// Every class can have friends
-// now creating a separate friend function that has access to the ariables inside the class
-
+using namespace boost; 
 
 template <class T>
 Rectangle<T> duplicate (const Rectangle<T>& param)  {
@@ -16,9 +18,45 @@ Rectangle<T> duplicate (const Rectangle<T>& param)  {
   return res; 
 }
 
-//struct B {};
-//struct D : B {};
+boostTuple::boostTuple() { 
+}; // constructor 
 
-//enum class E {ONE, TWO, THREE};
-//enum EU { ONE, TWO, THREE};
+boostTuple::~boostTuple() {
+}; // destructor 
 
+void boostTuple::allocateintopair() {
+
+  cout << "Please enter the number" << endl;
+  // Need to make sure the input value is an interger 
+  try {
+    
+  cin >> gettupleint;
+  
+  if (typeid(getupleint).name() != "int")
+    {
+      throw "The input is not an integer";
+    }
+ 
+  } catch (const char* msg) {
+    cerr << msg << endl;
+  }
+  
+}
+
+void boostTuple::allocateintoquad() {
+
+  cout << "Please enter the string " << endl;
+  // Need to make sure the input value is a string
+  cin >> str;
+  
+  if (typeid(getupleint).name() != "int")
+    
+    {
+      throw "The input is not an string";
+    }
+  
+  catch (const char* msg) {
+    cerr << msg << endl;
+  }
+  
+} 

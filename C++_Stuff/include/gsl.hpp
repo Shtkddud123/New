@@ -23,7 +23,6 @@
 #include <gsl/gsl_rng.h>
 
 // Gamma and Beta Functions
-
 #include <gsl/gsl_sf_gamma.h>
 
 #endif

@@ -2,11 +2,12 @@
 #include <vector>
 #include <algorithm>
 #include <map>
+#include <string>
 #include <cmath>
 #include <cstdio>
-#include <string>
+#include <ctime>
+#include <cstdlib>
 
-// --- Custom C++ header files --- //
 #include "Object.hpp"
 #include "Map.hpp"
 #include "Geo.hpp"
@@ -21,15 +22,15 @@
 #include "gsl.hpp"
 #include "gslmat.hpp"
 
+
 // --- Boost libraries --- //
 #include <boost/array.hpp>
 #include <boost/numeric/odeint.hpp>
+#include <boost/math/distributions.hpp>
 
 // --- Algorithms libraries --- //
 
 #include "sedgewickalg.hpp"
-
-//#include "line.hpp"
 
 using namespace std;
 using namespace boost::numeric::odeint;
@@ -49,12 +50,9 @@ using namespace boost::numeric::odeint;
   //[ rhs_class
   /* The rhs of x' = f(x) defined as a class */
   class harm_osc {
-
     double m_gam;
-
   public:
     harm_osc( double gam ) : m_gam(gam) { }
-
     void operator() ( const state_type &x , state_type &dxdt , const double /* t */ )
     {
       dxdt[0] = x[1];
@@ -62,19 +60,38 @@ using namespace boost::numeric::odeint;
     }
   };
 
+#ifndef TEST_CLASS_A
+#define TEST_CLASS_A
+
+class A
+{
+private:
+  double myValue_;
+
+public:
+  A(const double& myValue):myValue_(myValue){
+    cout << "Constructor of A" << endl;
+  }
+  ~A() {
+    cout << "Destructor of A with value " << myValue_ << endl;
+    
+  }
+  double getValue() const {return myValue_};
+};
+
+#endif 
 
 int main(int argc, char *argv[]) {
+
+
+
+  boost::math::normal_distribution<> d(0.5,1);
   
   MCalg a(3000);
+
   a.direct_pi();
   a.print_pi();
   a.print_xy();
-  // Testing the operator()
-
-  // alg1 c;
-
-  //c = a + b;
-  //std::cout << c.num << std::endl;
 
   Box Box1(2.2,1.2,1.5);
   Box Box2(8.5,6.0,2.0);
@@ -93,19 +110,6 @@ int main(int argc, char *argv[]) {
   bb.addnew(aRandomVector); // adding new vector
 
   bb.print();
-
-  // ------------------------- //
-  // map lower bound example
-  /*
-  std::map<char,int> mymap;
-  std::map<char,int>::iterator itlow, itup;
-
-  mymap['a'] = 20;
-  mymap['b'] = 20;
-  mymap['c'] = 20;
-  mymap['d'] = 20;
-  mymap['e'] = 20;
-  */
   
   mapexample mymap;
   mymap.addtomap('a',3);
@@ -115,7 +119,23 @@ int main(int argc, char *argv[]) {
   mymap.addtomap('e',3);
   mymap.printmap();
 
-  // The set defines the beseel function of first and second types ..  
+  
+// template <class T>
+//   T median(vector<T> v) {
+//   typedef typename vector<T>::size_type vec_sz;
+//   vec_sz size = v.size();
+//
+//   if (size == 0)
+//     throw domain_error("median of an empty vector");
+//   sort(v.begin, v.end());
+//   
+//   vec_sz mid = size/2;
+//   return size % 2 == 0 ? (v[mid] + v[mid-1]) /2 : v[mid];
+//      
+// }
+
+  
+
   //  customSet::SET<int> besselFunctions(myints, myints+5);
   
   gsl_function F;
