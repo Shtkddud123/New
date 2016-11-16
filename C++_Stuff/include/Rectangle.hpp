@@ -13,8 +13,8 @@ class boostTuple {
 public:
   boostTuple(); // Constructor 
   ~boostTuple(); // Destructor 
-  void allocateintopair;
-  void allocateintoquad;
+  void allocateintopair();
+  void allocateintoquad();
   void maketuple;
   
 private:  

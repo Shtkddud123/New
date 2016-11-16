@@ -18,6 +18,8 @@ Rectangle<T> duplicate (const Rectangle<T>& param)  {
   return res; 
 }
 
+
+///
 boostTuple::boostTuple() { 
 }; // constructor 
 
@@ -25,7 +27,6 @@ boostTuple::~boostTuple() {
 }; // destructor 
 
 void boostTuple::allocateintopair() {
-
   cout << "Please enter the number" << endl;
   // Need to make sure the input value is an interger 
   try {
@@ -42,21 +43,20 @@ void boostTuple::allocateintopair() {
   }
   
 }
-
 void boostTuple::allocateintoquad() {
 
   cout << "Please enter the string " << endl;
   // Need to make sure the input value is a string
-  cin >> str;
-  
-  if (typeid(getupleint).name() != "int")
-    
-    {
+  try {
+    cin >> str;  
+    if (typeid(str).name() != "string")    {
+      // Type of error to throw
       throw "The input is not an string";
     }
-  
-  catch (const char* msg) {
-    cerr << msg << endl;
+  } catch (const char* msg) {
+    cerr << msg << endl; 
   }
   
-} 
+}
+
+

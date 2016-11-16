@@ -7,6 +7,8 @@
 #include <cstdio>
 #include <ctime>
 #include <cstdlib>
+#include <set>
+
 
 #include "Object.hpp"
 #include "Map.hpp"
@@ -25,6 +27,7 @@
 
 // --- Boost libraries --- //
 #include <boost/array.hpp>
+#include <boost/tuple/tuple.hpp>
 #include <boost/numeric/odeint.hpp>
 #include <boost/math/distributions.hpp>
 
@@ -32,33 +35,12 @@
 
 #include "sedgewickalg.hpp"
 
+// Namespaces
 using namespace std;
 using namespace boost::numeric::odeint;
-  
-  /* The type of container used to hold the state vector */
-  typedef std::vector<double> state_type;
+using namespace boost;
 
-  const double gam = 0.15;
 
-  /* The rhs of x' = f(x) */
-  void harmonic_oscillator( const state_type &x , state_type &dxdt , const double /* t */ )
-  {
-    dxdt[0] = x[1];
-    dxdt[1] = -x[0] - gam*x[1];
-  }
-
-  //[ rhs_class
-  /* The rhs of x' = f(x) defined as a class */
-  class harm_osc {
-    double m_gam;
-  public:
-    harm_osc( double gam ) : m_gam(gam) { }
-    void operator() ( const state_type &x , state_type &dxdt , const double /* t */ )
-    {
-      dxdt[0] = x[1];
-      dxdt[1] = -x[0] - m_gam*x[1];
-    }
-  };
 
 #ifndef TEST_CLASS_A
 #define TEST_CLASS_A
@@ -83,9 +65,43 @@ public:
 
 int main(int argc, char *argv[]) {
 
+  // ----------- // 
+  //  boost::tuple<int, string>
+  // ----- Statistics ------- //
 
-
+  
   boost::math::normal_distribution<> d(0.5,1);
+
+
+  // Tuple -- Example of initialization  
+  boost::tuple<int, std::string> almost_a_pair;
+  boost::tuple<int, float, double, int> quad;
+
+  // making a vector of almost_a_pair/quadvectors.
+  vector<almost_a_pair> tuplevector;
+  vector<quad> quadvector;
+  tuplevector = {std::make_tuple(1,"Sang"), std::make_tuple(2,"Young")}; // allocating the first two elements of the tuple vector
+  quadvector = {std::make_tuple(1,"Sang",28,1), std::make_tuple(2,"Young",29,2)}; // allocating the first two elements of the quad vector 
+  
+  int i = boost::get<0>(tuplevector(1)); // get the first element integer of the tuple
+  const std::string& str = boost::get<1>(tuplevector(1)); // get the second element of the tuple
+  double d = boost::get<2>(quad(1)); // --------- 
+
+  set<tuple<int, double, int> > s;
+  s.insert(make_tuple(1,1.0,2));
+  s.insert(make_tuple(2,1.0,2));
+  s.insert(make_tuple(3,100.0,2));
+
+  // requires C++11
+  auto t = make_tuple(0, -1.0, 2);
+  assert(2 == get<2>(t)); // using cassert to check the values are correct
+
+  // Reordering the parameters of function
+  class Number{};
+  inline Number operator+ (Number, Number);
+  
+
+
   
   MCalg a(3000);
 

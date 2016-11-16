@@ -35,6 +35,10 @@ iostream
 -
 cassert
 -
+boost/tuple/tuple.hpp
+-
+string
+-
 
 ../include/StringVector.hpp
 vector
@@ -105,9 +109,13 @@ algorithm
 -
 map
 -
+string
+-
 boost/random/mersenne_twister.hpp
 -
 boost/random/uniform_int_distribution.hpp
+-
+boost/tuple/tuple.hpp
 -
 Object.hpp
 /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/Object.hpp
@@ -137,8 +145,14 @@ iostream
 -
 vector
 -
+string
+-
+typeinfo
+-
 Rectangle.hpp
 /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/Rectangle.hpp
+boost/tuple/tuple.hpp
+-
 
 /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/matrix.cxx
 gslmat.hpp
