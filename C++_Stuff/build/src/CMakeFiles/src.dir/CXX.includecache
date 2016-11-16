@@ -6,6 +6,7 @@
 
 #IncludeRegexTransform: 
 
+<<<<<<< HEAD
 ../include/Geo.hpp
 vector
 -
@@ -50,6 +51,8 @@ gsl/gsl_poly.h
 
 ../include/constructor.hpp
 
+=======
+>>>>>>> 4ee385d5fc34d758f7a8429e9a21af311613dada
 ../include/gsl.hpp
 gsl/gsl_complex.h
 -
@@ -86,6 +89,7 @@ vector
 gsl.hpp
 ../include/gsl.hpp
 
+<<<<<<< HEAD
 ../include/quadratic.hpp
 
 ../include/sedgewickalg.hpp
@@ -155,54 +159,11 @@ boost/tuple/tuple.hpp
 -
 
 /home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/matrix.cxx
+=======
+/home/sang/Desktop/Programming/GIT/Testing_C_programs/C++_Stuff/src/matrix.cxx
+>>>>>>> 4ee385d5fc34d758f7a8429e9a21af311613dada
 gslmat.hpp
-/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/gslmat.hpp
+/home/sang/Desktop/Programming/GIT/Testing_C_programs/C++_Stuff/src/gslmat.hpp
 gsl.hpp
-/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/gsl.hpp
-
-/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/quadratic.cxx
-quadratic.hpp
-/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/quadratic.hpp
-
-/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/sedgewick.cxx
-sedgewickalg.hpp
-/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/sedgewickalg.hpp
-gsl/gsl_cdf.h
--
-gsl/gsl_rng.h
--
-gsl/gsl_randist.h
--
-cstdio
--
-iostream
--
-array
--
-functional
--
-numeric
--
-vector
--
-
-/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/vector.cxx
-stdio.h
--
-math.h
--
-gsl/gsl_poly.h
--
-gsl/gsl_vector.h
--
-gsl/gsl_cblas.h
--
-gsl/gsl_math.h
--
-vector
--
-iterator
--
-vector.hpp
-/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/src/vector.hpp
+/home/sang/Desktop/Programming/GIT/Testing_C_programs/C++_Stuff/src/gsl.hpp
 

@@ -53,8 +53,6 @@ vector
 -
 map
 -
-gsl/gsl_poly.h
--
 
 ../include/constructor.hpp
 
@@ -106,7 +104,7 @@ gsl/gsl_randist.h
 cstdio
 -
 
-/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/main.cxx
+/home/sang/Desktop/Programming/GIT/Testing_C_programs/C++_Stuff/main.cxx
 iostream
 -
 vector
@@ -126,27 +124,27 @@ ctime
 cstdlib
 -
 Object.hpp
-/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/Object.hpp
+/home/sang/Desktop/Programming/GIT/Testing_C_programs/C++_Stuff/Object.hpp
 Map.hpp
-/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/Map.hpp
+/home/sang/Desktop/Programming/GIT/Testing_C_programs/C++_Stuff/Map.hpp
 Geo.hpp
-/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/Geo.hpp
+/home/sang/Desktop/Programming/GIT/Testing_C_programs/C++_Stuff/Geo.hpp
 StringVector.hpp
-/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/StringVector.hpp
+/home/sang/Desktop/Programming/GIT/Testing_C_programs/C++_Stuff/StringVector.hpp
 CustomSet.hpp
-/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/CustomSet.hpp
+/home/sang/Desktop/Programming/GIT/Testing_C_programs/C++_Stuff/CustomSet.hpp
 CustomBessel.hpp
-/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/CustomBessel.hpp
+/home/sang/Desktop/Programming/GIT/Testing_C_programs/C++_Stuff/CustomBessel.hpp
 Rectangle.hpp
-/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/Rectangle.hpp
+/home/sang/Desktop/Programming/GIT/Testing_C_programs/C++_Stuff/Rectangle.hpp
 quadratic.hpp
-/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/quadratic.hpp
+/home/sang/Desktop/Programming/GIT/Testing_C_programs/C++_Stuff/quadratic.hpp
 constructor.hpp
-/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/constructor.hpp
+/home/sang/Desktop/Programming/GIT/Testing_C_programs/C++_Stuff/constructor.hpp
 gsl.hpp
-/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/gsl.hpp
+/home/sang/Desktop/Programming/GIT/Testing_C_programs/C++_Stuff/gsl.hpp
 gslmat.hpp
-/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/gslmat.hpp
+/home/sang/Desktop/Programming/GIT/Testing_C_programs/C++_Stuff/gslmat.hpp
 boost/array.hpp
 -
 boost/numeric/odeint.hpp
@@ -154,5 +152,5 @@ boost/numeric/odeint.hpp
 boost/math/distributions.hpp
 -
 sedgewickalg.hpp
-/home/noh/Desktop/Program/GIT/Testing_C_programs/C++_Stuff/sedgewickalg.hpp
+/home/sang/Desktop/Programming/GIT/Testing_C_programs/C++_Stuff/sedgewickalg.hpp
 

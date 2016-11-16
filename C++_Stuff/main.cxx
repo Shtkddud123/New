@@ -65,14 +65,13 @@ public:
 
 int main(int argc, char *argv[]) {
 
-  // ----------- // 
+  // ------------------------ // 
   //  boost::tuple<int, string>
   // ----- Statistics ------- //
 
-  
   boost::math::normal_distribution<> d(0.5,1);
 
-
+  
   // Tuple -- Example of initialization  
   boost::tuple<int, std::string> almost_a_pair;
   boost::tuple<int, float, double, int> quad;
@@ -95,13 +94,10 @@ int main(int argc, char *argv[]) {
   // requires C++11
   auto t = make_tuple(0, -1.0, 2);
   assert(2 == get<2>(t)); // using cassert to check the values are correct
-
   // Reordering the parameters of function
   class Number{};
   inline Number operator+ (Number, Number);
-  
-
-
+ 
   
   MCalg a(3000);
 
