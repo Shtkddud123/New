@@ -9,7 +9,6 @@
 #include <cstdlib>
 #include <set>
 
-
 #include "Object.hpp"
 #include "Map.hpp"
 #include "Geo.hpp"
@@ -24,12 +23,16 @@
 #include "gsl.hpp"
 #include "gslmat.hpp"
 
-
 // --- Boost libraries --- //
 #include <boost/array.hpp>
 #include <boost/tuple/tuple.hpp>
 #include <boost/numeric/odeint.hpp>
 #include <boost/math/distributions.hpp>
+#include <boost/current_function.hpp>
+#include <boost/foreach.hpp>
+#include <boost/static_assert.hpp>
+#include <boost/detail/lightweight_test.hpp>
+#include <boost/lexical_cast.hpp>
 
 // --- Algorithms libraries --- //
 
@@ -39,8 +42,6 @@
 using namespace std;
 using namespace boost::numeric::odeint;
 using namespace boost;
-
-
 
 #ifndef TEST_CLASS_A
 #define TEST_CLASS_A
@@ -60,66 +61,87 @@ public:
   }
   double getValue() const {return myValue_};
 };
-
 #endif 
+
+#define MY_NUM 1300
+
+
 
 int main(int argc, char *argv[]) {
 
   // ------------------------ // 
   //  boost::tuple<int, string>
-  // ----- Statistics ------- //
 
-  boost::math::normal_distribution<> d(0.5,1);
+  /* -- Statistics -- */
+
 
   
+  boost::math::normal_distribution<> d(0.5,1);
+
+  /* --- Boost examples --- */
   // Tuple -- Example of initialization  
   boost::tuple<int, std::string> almost_a_pair;
   boost::tuple<int, float, double, int> quad;
-
+  
   // making a vector of almost_a_pair/quadvectors.
   vector<almost_a_pair> tuplevector;
   vector<quad> quadvector;
-  tuplevector = {std::make_tuple(1,"Sang"), std::make_tuple(2,"Young")}; // allocating the first two elements of the tuple vector
-  quadvector = {std::make_tuple(1,"Sang",28,1), std::make_tuple(2,"Young",29,2)}; // allocating the first two elements of the quad vector 
   
-  int i = boost::get<0>(tuplevector(1)); // get the first element integer of the tuple
-  const std::string& str = boost::get<1>(tuplevector(1)); // get the second element of the tuple
-  double d = boost::get<2>(quad(1)); // --------- 
-
-  set<tuple<int, double, int> > s;
-  s.insert(make_tuple(1,1.0,2));
-  s.insert(make_tuple(2,1.0,2));
-  s.insert(make_tuple(3,100.0,2));
-
-  // requires C++11
-  auto t = make_tuple(0, -1.0, 2);
-  assert(2 == get<2>(t)); // using cassert to check the values are correct
-  // Reordering the parameters of function
-  class Number{};
-  inline Number operator+ (Number, Number);
+  try {
+    
+    tuplevector = {std::make_tuple(1,"Sang"), std::make_tuple(2,"Young")}; // allocating the first two elements of the tuple vector
+    quadvector = {std::make_tuple(1,"Sang",28,1), std::make_tuple(2,"Young",29,2)}; // allocating the first two elements of the quad vector 
+    
+    
+ if (tuplevector !=  ) { // a if block to check if the vectors ARE vectors  
+   throw "ERROR: Need to remake the vectors"; 
+ }
  
-  
-  MCalg a(3000);
+  } catch (cont char* msg) {
+    cerr << msg << endl;
+ }
 
-  a.direct_pi();
-  a.print_pi();
-  a.print_xy();
+ 
+int i = boost::get<0>(tuplevector(1)); // get the first element integer of the tuple
+const std::string& str = boost::get<1>(tuplevector(1)); // get the second element of the tuple
+double d = boost::get<2>(quad(1)); // --------- 
 
-  Box Box1(2.2,1.2,1.5);
-  Box Box2(8.5,6.0,2.0);
+set<tuple<int, double, int> > s;
+s.insert(make_tuple(1,1.0,2));
+s.insert(make_tuple(2,1.0,2));
+s.insert(make_tuple(3,100.0,2));
 
-  if (Box1.compare(Box2)) {
-    std::cout << "Box2 is smaller than Box1" << endl; 
-  }
+// converting string to integers, using the boost library
+
+int convChar1 = boost::lexical_cast<int>("100");
+char chars[] = {'1','0','0'};
+int convChar2 = boost::lexical_cast<int>(chars,3);
+
+
+// Monte Carlo algorithm
+
+MCalg a(3000);
+a.direct_pi();
+a.print_pi();
+a.print_xy();
+
+// random shape
+ 
+Box Box1(2.2,1.2,1.5);
+Box Box2(8.5,6.0,2.0);
+
+if (Box1.compare(Box2)) {
+std::cout << "Box2 is smaller than Box1" << endl; 
+}
 
   std::vector<int> aRandomVector;
-  aRandomVector.push_back(1);
-  aRandomVector.push_back(2);
-  aRandomVector.push_back(3);
-  std::cout << "dfdf" << endl;
-  StringVector<int> bb;
-  
-  bb.addnew(aRandomVector); // adding new vector
+aRandomVector.push_back(1);
+aRandomVector.push_back(2);
+aRandomVector.push_back(3);
+std::cout << "dfdf" << endl;
+StringVector<int> bb;
+
+bb.addnew(aRandomVector); // adding new vector
 
   bb.print();
   
